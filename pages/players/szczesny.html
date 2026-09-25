@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web del FC Barcelona</title>
+    <link rel="icon" href="../../assets/fc-barcelona.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../../styles/base.css">
+    <link rel="stylesheet" href="../../styles/profile.css">
+</head>
+<body>
+    <header id="mainHeader">
+        <div class="header-content">
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <nav id="mainNav">
+                <div class="nav-item">
+                    Primer Equipo
+                    <div class="dropdown">
+                        <a href="../players.html">Jugadores</a>
+                        <a href="../tickets.html">Entradas</a>
+                        <a href="../standings.html">Clasificacion</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    Noticias 
+                    <div class="dropdown">
+                        <a href="../latest-news.html">Últimas Noticias</a>
+                        <a href="../upcoming-matches.html">Próximos Partidos</a>
+                        <a href="../results.html">Resultados</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    Historia
+                    <div class="dropdown">
+                        <a href="../history.html">Historia del Club</a>
+                        <a href="../trophies.html">Títulos</a>
+                        <a href="../stadium.html">Estadio</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    Más Equipos
+                    <div class="dropdown">
+                        <a href="../women.html">Femenino</a>
+                        <a href="../basketball.html">Baloncesto</a>
+                        <a href="../barca-atletic.html">Barca Atletic</a>
+                    </div>
+                </div>   
+            </nav>
+            
+            <div class="logo-container">
+                <a href="../../index.html">   
+                <img class="logo" src="../../assets/fc-barcelona.svg" alt="Logo del FC Barcelona">
+                </a>
+            </div>
+
+            <div class="header-right-container">
+                <div class="header-right">
+                    <a href="../membership.html" class="cta-button cta-button--gold">Hazte Socio</a>
+                    <a href="../tickets.html" class="cta-button cta-button--ghost">Entradas</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="player-profile">
+            <div class="player-header">
+                <div class="player-banner">
+                    <img src="../../assets/player-pages/szcaccion.jpg" alt="Szczęsny en acción" class="banner-img">
+                    <div class="player-overlay">
+                        <h1>Wojciech Szczęsny</h1>
+                        <div class="player-details">
+                            <span class="player-number">1</span>
+                            <span class="player-position">Portero</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="player-basic-info">
+                    <div class="info-item">
+                        <span class="info-label">Nombre completo</span>
+                        <span class="info-value">Wojciech Tomasz Szczęsny</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Nacimiento</span>
+                        <span class="info-value">18 Abril 1990 (34 años)</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Nacionalidad</span>
+                        <span class="info-value">
+                            <img src="../../assets/player-pages/polonia.png" alt="Polonia" class="flag-icon"> Polonia
+                        </span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Altura</span>
+                        <span class="info-value">1.96 m</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Debut Barça</span>
+                        <span class="info-value">2023 (Traspaso desde Juventus)</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Procedencia</span>
+                        <span class="info-value">Juventus FC</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="player-content">
+                <article class="player-bio">
+                    <h2>El Experto Bajo los Palos</h2>
+                    <div class="bio-content">
+                        <img src="../../assets/players/25-Szczesny-M.webp" alt="Szczęsny retrato" class="bio-img">
+                        <div class="bio-text">
+                            <p><strong>Wojciech Szczęsny</strong> es uno de los porteros más experimentados de Europa. Hijo del también portero Maciej Szczęsny, comenzó su carrera en las categorías inferiores del Legia Varsovia antes de unirse al Arsenal en 2006 con solo 16 años.</p>
+                            <p>Tras debutar con el primer equipo del Arsenal en 2009, se consolidó como titular en la temporada 2010-11. En 2015 fue cedido a la AS Roma, donde sus destacadas actuaciones le valieron un fichaje por la <strong>Juventus en 2017</strong>, club donde ganó múltiples títulos.</p>
+                            <p>En 2023 fichó por el FC Barcelona como refuerzo para la portería, aportando experiencia y seguridad. Con la selección polaca es el <strong>portero con más partidos</strong> en la historia, habiendo participado en múltiples Eurocopas y Mundiales.</p>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="player-stats">
+                    <h2>Estadísticas 2023/24</h2>
+                    <div class="stats-tabs">
+                        <button class="tab-btn active" data-tab="club">Club</button>
+                        <button class="tab-btn" data-tab="national">Selección</button>
+                        <button class="tab-btn" data-tab="career">Carrera</button>
+                    </div>
+                    
+                    <div class="stats-content active" id="club-stats">
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <span class="stat-number">18</span>
+                                <span class="stat-label">Partidos</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">0.95</span>
+                                <span class="stat-label">Goles encajados p/j</span>
+                            </div>
+                            <div class="stat-card highlight">
+                                <span class="stat-number">8</span>
+                                <span class="stat-label">Clean Sheets</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">76%</span>
+                                <span class="stat-label">Paradas</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">85%</span>
+                                <span class="stat-label">Pases acertados</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">2.1</span>
+                                <span class="stat-label">Salidas p/j</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="stats-content" id="national-stats">
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <span class="stat-number">80</span>
+                                <span class="stat-label">Partidos</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">1.12</span>
+                                <span class="stat-label">Goles encajados p/j</span>
+                            </div>
+                            <div class="stat-card highlight">
+                                <span class="stat-number">28</span>
+                                <span class="stat-label">Clean Sheets</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">72%</span>
+                                <span class="stat-label">Paradas</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">Mundial 2022</span>
+                                <span class="stat-label">Mejor torneo</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="stats-content" id="career-stats">
+                        <div class="stats-grid">
+                            <div class="stat-card highlight">
+                                <span class="stat-number">450+</span>
+                                <span class="stat-label">Partidos clubes</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">0.98</span>
+                                <span class="stat-label">Media goles encajados</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">180+</span>
+                                <span class="stat-label">Clean Sheets</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">3</span>
+                                <span class="stat-label">MVP Serie A</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">2</span>
+                                <span class="stat-label">Guante de Oro PL</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="player-trophies">
+                    <h2>Palmarés</h2>
+                    <div class="trophies-container">
+                        <div class="trophy-category">
+                            <h3>🏆 Juventus FC</h3>
+                            <ul>
+                                <li>3 Serie A (2017/18, 2018/19, 2019/20)</li>
+                                <li>2 Supercopas Italia</li>
+                                <li>2 Copas Italia</li>
+                            </ul>
+                        </div>
+                        <div class="trophy-category">
+                            <h3>🔴 Arsenal FC</h3>
+                            <ul>
+                                <li>1 FA Cup (2014/15)</li>
+                                <li>2 Community Shield</li>
+                            </ul>
+                        </div>
+                        <div class="trophy-category">
+                            <h3>🏅 Individuales</h3>
+                            <ul>
+                                <li>Guante de Oro PL 2013/14</li>
+                                <li>Mejor Portero Serie A 2019/20</li>
+                                <li>Equipo Ideal Serie A (2 veces)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="player-highlights">
+                    <h2>Paradas Destacadas</h2>
+                    <div class="highlight-videos">
+                        <div class="video-card">
+                            <img src="../../assets/player-pages/szcbarca.jpg" alt="Szczęsny vs Barcelona" class="video-thumbnail">
+                            <div class="video-info">
+                                <h3>Atajadas vs Barcelona (2020)</h3>
+                                <p>8 paradas en partido de Champions</p>
+                                <a href="https://www.youtube.com/watch?v=KlQICTO1bGE">
+                                <button class="btn-watch">▶ Ver paradas</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <img src="../../assets/player-pages/szcmundial.jpg" alt="Szczęsny con Polonia" class="video-thumbnail">
+                            <div class="video-info">
+                                <h3>Mundial 2022</h3>
+                                <p>Atajada clave a Messi en fase de grupos</p>
+                                <a href="https://www.youtube.com/watch?v=CSuY6kAYk3Y">
+                                <button class="btn-watch">▶ Ver paradas</button>
+                                </a>    
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <img src="../../assets/player-pages/szcpenal.jpg" alt="Szczęsny penalti" class="video-thumbnail">
+                            <div class="video-info">
+                                <h3>Atajada de penalti</h3>
+                                <p>Detiene a Ronaldo en Supercopa Italia</p>
+                                <a href="https://www.youtube.com/shorts/G4dqx5jAEn4">
+                                <button class="btn-watch">▶ Ver parada</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="player-style">
+                    <h2>Estilo de Juego</h2>
+                    <div class="style-content">
+                        <div class="style-text">
+                            <p>Szczęsny es un portero <strong>completo y seguro</strong> que destaca por:</p>
+                            <ul>
+                                <li><strong>Envergadura:</strong> 1.96m que domina el área</li>
+                                <li><strong>Reflejos:</strong> Paradas rápidas en distancias cortas</li>
+                                <li><strong>Juego aéreo:</strong> Seguridad en centros y corners</li>
+                                <li><strong>Pies:</strong> Buen inicio de juego con los defensas</li>
+                                <li><strong>Experiencia:</strong> Liderazgo y comunicación con la defensa</li>
+                            </ul>
+                            <p>Aunque llegó al Barça como suplente de Ter Stegen, ha demostrado ser un <strong>portero de alto nivel</strong> capaz de responder cuando es requerido, aportando tranquilidad al equipo.</p>
+                        </div>
+                        <div class="style-image">
+                            <div class="style-quote">
+                                <blockquote>"Vine al Barça para competir y ayudar al equipo en cada oportunidad"</blockquote>
+                                <cite>- Szczęsny, 2023</cite>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    
+        
+        <script>
+            // Funcionalidad de pestañas
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remover clase active de todos los botones y contenidos
+                    document.querySelector('.tab-btn.active').classList.remove('active');
+                    document.querySelector('.stats-content.active').classList.remove('active');
+                    
+                    // Añadir clase active al botón clickeado
+                    btn.classList.add('active');
+                    
+                    // Mostrar el contenido correspondiente
+                    const tabId = btn.getAttribute('data-tab');
+                    document.getElementById(`${tabId}-stats`).classList.add('active');
+                });
+            });
+        </script>
+    </main>
+
+    <footer id="mainFooter">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Porteros</h3>
+                <p><a href="../players/ter-stegen.html">Ter Stegen</a></p>
+                <p><a href="../players/szczesny.html">Szczęsny</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Defensas</h3>
+                <p><a href="../players/araujo.html">Araújo</a></p>
+                <p><a href="../players/kounde.html">Koundé</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Centrocampistas</h3>
+                <p><a href="../players/pedri.html">Pedri</a></p>
+                <p><a href="../players/gavi.html">Gavi</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Delanteros</h3>
+                <p><a href="../players/lewandowski.html">Lewandowski</a></p>
+                <p><a href="../players/yamal.html">Yamal</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociales</h3>
+                <p><a href="https://www.fcbarcelona.es/es/">Pagina Oficial</a></p>
+                <p><a href="https://www.instagram.com/fcbarcelona/">Instagram</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Club</h3>
+                <p><a href="../stadium.html">Estadio</a></p>
+                <p><a href="../history.html">Historia</a></p>
+            </div>
+        </div>
+    </footer>
+
+<script src="../../scripts/site.js" defer></script>
+</body>
+</html>

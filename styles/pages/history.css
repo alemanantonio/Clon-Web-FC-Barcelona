@@ -1,0 +1,162 @@
+.history-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.58)),
+    url("../../assets/history/Fundacion.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--space-7) 0;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  margin-left: -2px;
+  background: var(--brand-gradient-vertical);
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: var(--space-5) var(--space-7);
+}
+
+.timeline-item:nth-child(odd) {
+  left: 0;
+}
+
+.timeline-item:nth-child(even) {
+  left: 50%;
+}
+
+.timeline-year {
+  position: absolute;
+  top: var(--space-5);
+  z-index: 1;
+  padding: var(--space-2) var(--space-4);
+  background: var(--brand-gradient);
+  color: var(--on-brand);
+  border-radius: var(--radius-pill);
+  font-weight: 700;
+  letter-spacing: var(--tracking-caption);
+}
+
+.timeline-item:nth-child(odd) .timeline-year {
+  right: -70px;
+}
+
+.timeline-item:nth-child(even) .timeline-year {
+  left: -70px;
+}
+
+.timeline-content {
+  padding: var(--space-5);
+}
+
+.timeline-content h3 {
+  margin-bottom: var(--space-3);
+}
+
+.timeline-content img {
+  width: 100%;
+  border-radius: var(--radius-sm);
+  margin: var(--space-3) 0;
+}
+
+.presidents-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+  gap: var(--space-6);
+}
+
+.president-card img {
+  height: 250px;
+}
+
+.period {
+  padding: 0 var(--space-5);
+  color: var(--azul);
+  font-size: var(--fs-caption);
+  font-weight: 700;
+}
+
+.president-card p:last-child {
+  padding: 0 var(--space-5) var(--space-5);
+  color: var(--muted);
+  font-size: var(--fs-caption);
+  line-height: var(--lh-body);
+}
+
+.legacy-content {
+  display: flex;
+  gap: var(--space-7);
+  align-items: center;
+}
+
+.legacy-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.legacy-text p {
+  margin-bottom: var(--space-5);
+  font-size: 1.1rem;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+  gap: var(--space-5);
+}
+
+.value-item {
+  padding: var(--space-5);
+}
+
+.value-item h3 {
+  margin-bottom: var(--space-3);
+}
+
+.legacy-image {
+  flex: 1;
+  min-width: 0;
+}
+
+.legacy-image img {
+  width: 100%;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-1);
+}
+
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 30px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding: var(--space-5) var(--space-5) var(--space-5) 70px;
+  }
+
+  .timeline-item:nth-child(even) {
+    left: 0;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-year,
+  .timeline-item:nth-child(even) .timeline-year {
+    left: 15px;
+    right: auto;
+  }
+
+  .legacy-content {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web del FC Barcelona</title>
+    <link rel="icon" href="../assets/fc-barcelona.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/pages/results.css">
+</head>
+<body>
+    <header id="mainHeader">
+        <div class="header-content">
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <nav id="mainNav">
+                <div class="nav-item">
+                    Primer Equipo
+                    <div class="dropdown">
+                        <a href="players.html">Jugadores</a>
+                        <a href="tickets.html">Entradas</a>
+                        <a href="standings.html">Clasificacion</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    Noticias 
+                    <div class="dropdown">
+                        <a href="latest-news.html">Últimas Noticias</a>
+                        <a href="upcoming-matches.html">Próximos Partidos</a>
+                        <a href="results.html">Resultados</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    Historia
+                    <div class="dropdown">
+                        <a href="history.html">Historia del Club</a>
+                        <a href="trophies.html">Títulos</a>
+                        <a href="stadium.html">Estadio</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    Más Equipos
+                    <div class="dropdown">
+                        <a href="women.html">Femenino</a>
+                        <a href="basketball.html">Baloncesto</a>
+                        <a href="barca-atletic.html">Barca Atletic</a>
+                    </div>
+                </div>   
+            </nav>
+            
+            <div class="logo-container">
+                <a href="../index.html">   
+                <img class="logo" src="../assets/fc-barcelona.svg" alt="Logo del FC Barcelona">
+                </a>
+            </div>
+
+            <div class="header-right-container">
+                <div class="header-right">
+                    <a href="membership.html" class="cta-button cta-button--gold">Hazte Socio</a>
+                    <a href="tickets.html" class="cta-button cta-button--ghost">Entradas</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="latest-results">
+            <h1>Últimos Resultados</h1>
+            
+            <div class="season-selector">
+                <select id="season-select">
+                    <option value="2023-24">Temporada 2023/24</option>
+                    <option value="2022-23">Temporada 2022/23</option>
+                    <option value="2021-22">Temporada 2021/22</option>
+                </select>
+                <button class="btn-filter">Filtrar por competición</button>
+            </div>
+            
+            <div class="results-container">
+                <!-- Partido 1 -->
+                <article class="result-card">
+                    <div class="match-header">
+                        <span class="competition">
+                            <img src="../assets/upcoming-matches/champions.png" alt="Champions League" class="competition-icon">
+                            Champions League - Semifinal
+                        </span>
+                        <span class="match-date">7 Mayo 2024</span>
+                    </div>
+                    
+                    <div class="teams-container">
+                        <div class="team">
+                            <img src="../assets/fc-barcelona.svg" alt="FC Barcelona" class="team-logo">
+                            <span class="team-name">FC Barcelona</span>
+                        </div>
+                        
+                        <div class="score-details">
+                            <div class="score">2 - 1</div>
+                            <div class="match-info">
+                                <span class="stadium">Camp Nou</span>
+                                <div class="goals">
+                                    <span>Lewandowski 45'</span>
+                                    <span>Pedri 78'</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="team">
+                            <img src="../assets/standings/bayernmunchen.png" alt="Bayern Munich" class="team-logo">
+                            <span class="team-name">Bayern Munich</span>
+                        </div>
+                    </div>
+                    
+                    <div class="match-stats">
+                        <div class="stat-item">
+                            <span class="stat-value">62%</span>
+                            <span class="stat-name">Posesión</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">18</span>
+                            <span class="stat-name">Tiros</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">6</span>
+                            <span class="stat-name">Corners</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">4</span>
+                            <span class="stat-name">Amarillas</span>
+                        </div>
+                    </div>
+                    
+                    <button class="btn-highlights">📹 Ver Resumen</button>
+                </article>
+                
+                <!-- Partido 2 -->
+                <article class="result-card">
+                    <div class="match-header">
+                        <span class="competition">
+                            <img src="../assets/upcoming-matches/laliga.png" alt="La Liga" class="competition-icon">
+                            La Liga - Jornada 34
+                        </span>
+                        <span class="match-date">29 Abril 2024</span>
+                    </div>
+                    
+                    <div class="teams-container">
+                        <div class="team">
+                            <img src="../assets/fc-barcelona.svg" alt="FC Barcelona" class="team-logo">
+                            <span class="team-name">FC Barcelona</span>
+                        </div>
+                        
+                        <div class="score-details">
+                            <div class="score highlight-win">4 - 0</div>
+                            <div class="match-info">
+                                <span class="stadium">Camp Nou</span>
+                                <div class="goals">
+                                    <span>Lewandowski 11', 45'</span>
+                                    <span>Fermín 53'</span>
+                                    <span>F. Torres 89'</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="team">
+                            <img src="../assets/standings/valencia.png" alt="Valencia CF" class="team-logo">
+                            <span class="team-name">Valencia CF</span>
+                        </div>
+                    </div>
+                    
+                    <div class="match-stats">
+                        <div class="stat-item">
+                            <span class="stat-value">68%</span>
+                            <span class="stat-name">Posesión</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">22</span>
+                            <span class="stat-name">Tiros</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">8</span>
+                            <span class="stat-name">Corners</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">2</span>
+                            <span class="stat-name">Amarillas</span>
+                        </div>
+                    </div>
+                    
+                    <button class="btn-highlights">📹 Ver Resumen</button>
+                </article>
+                
+                <!-- Partido 3 -->
+                <article class="result-card">
+                    <div class="match-header">
+                        <span class="competition">
+                            <img src="../assets/upcoming-matches/laliga.png" alt="La Liga" class="competition-icon">
+                            La Liga - Jornada 33
+                        </span>
+                        <span class="match-date">24 Abril 2024</span>
+                    </div>
+                    
+                    <div class="teams-container">
+                        <div class="team">
+                            <img src="../assets/fc-barcelona.svg" alt="FC Barcelona" class="team-logo">
+                            <span class="team-name">FC Barcelona</span>
+                        </div>
+                        
+                        <div class="score-details">
+                            <div class="score draw">2 - 2</div>
+                            <div class="match-info">
+                                <span class="stadium">Estadio de la Cerámica</span>
+                                <div class="goals">
+                                    <span>F. Torres 40'</span>
+                                    <span>Gündoğan 55' (p)</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="team">
+                            <img src="../assets/standings/villarreal.png" alt="Villarreal CF" class="team-logo">
+                            <span class="team-name">Villarreal CF</span>
+                        </div>
+                    </div>
+                    
+                    <div class="match-stats">
+                        <div class="stat-item">
+                            <span class="stat-value">59%</span>
+                            <span class="stat-name">Posesión</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">14</span>
+                            <span class="stat-name">Tiros</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">5</span>
+                            <span class="stat-name">Corners</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">3</span>
+                            <span class="stat-name">Amarillas</span>
+                        </div>
+                    </div>
+                    
+                    <button class="btn-highlights">📹 Ver Resumen</button>
+                </article>
+                
+                <!-- Partido 4 -->
+                <article class="result-card">
+                    <div class="match-header">
+                        <span class="competition">
+                            <img src="../assets/upcoming-matches/champions.png" alt="Champions League" class="competition-icon">
+                            Champions League - Cuartos
+                        </span>
+                        <span class="match-date">16 Abril 2024</span>
+                    </div>
+                    
+                    <div class="teams-container">
+                        <div class="team">
+                            <img src="../assets/standings/psg.png" alt="Paris Saint-Germain" class="team-logo">
+                            <span class="team-name">Paris SG</span>
+                        </div>
+                        
+                        <div class="score-details">
+                            <div class="score highlight-loss">4 - 1</div>
+                            <div class="match-info">
+                                <span class="stadium">Parc des Princes</span>
+                                <div class="goals">
+                                    <span>Raphinha 12'</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="team">
+                            <img src="../assets/fc-barcelona.svg" alt="FC Barcelona" class="team-logo">
+                            <span class="team-name">FC Barcelona</span>
+                        </div>
+                    </div>
+                    
+                    <div class="match-stats">
+                        <div class="stat-item">
+                            <span class="stat-value">47%</span>
+                            <span class="stat-name">Posesión</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">9</span>
+                            <span class="stat-name">Tiros</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">3</span>
+                            <span class="stat-name">Corners</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">5</span>
+                            <span class="stat-name">Amarillas</span>
+                        </div>
+                    </div>
+                    
+                    <button class="btn-highlights">📹 Ver Resumen</button>
+                </article>
+            </div>
+            
+            <div class="stats-summary">
+                <h2>Resumen Estadístico</h2>
+                <div class="stats-grid">
+                    <div class="stat-summary-card">
+                        <span class="stat-number">25</span>
+                        <span class="stat-label">Partidos jugados</span>
+                    </div>
+                    <div class="stat-summary-card">
+                        <span class="stat-number">18</span>
+                        <span class="stat-label">Victorias</span>
+                    </div>
+                    <div class="stat-summary-card">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">Empates</span>
+                    </div>
+                    <div class="stat-summary-card">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Derrotas</span>
+                    </div>
+                    <div class="stat-summary-card highlight">
+                        <span class="stat-number">62</span>
+                        <span class="stat-label">Goles a favor</span>
+                    </div>
+                    <div class="stat-summary-card">
+                        <span class="stat-number">28</span>
+                        <span class="stat-label">Goles en contra</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pagination">
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="next-btn">Siguiente →</button>
+            </div>
+        </section>
+    
+    </main>
+
+    <footer id="mainFooter">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Porteros</h3>
+                <p><a href="players/ter-stegen.html">Ter Stegen</a></p>
+                <p><a href="players/szczesny.html">Szczęsny</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Defensas</h3>
+                <p><a href="players/araujo.html">Araújo</a></p>
+                <p><a href="players/kounde.html">Koundé</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Centrocampistas</h3>
+                <p><a href="players/pedri.html">Pedri</a></p>
+                <p><a href="players/gavi.html">Gavi</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Delanteros</h3>
+                <p><a href="players/lewandowski.html">Lewandowski</a></p>
+                <p><a href="players/yamal.html">Yamal</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociales</h3>
+                <p><a href="https://www.fcbarcelona.es/es/">Pagina Oficial</a></p>
+                <p><a href="https://www.instagram.com/fcbarcelona/">Instagram</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Club</h3>
+                <p><a href="stadium.html">Estadio</a></p>
+                <p><a href="history.html">Historia</a></p>
+            </div>
+        </div>
+    </footer>
+
+<script src="../scripts/site.js" defer></script>
+</body>
+</html>

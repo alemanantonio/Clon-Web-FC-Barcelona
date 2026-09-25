@@ -1,0 +1,445 @@
+.tickets-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.62)),
+        url('../../assets/news/campnou.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.tickets-hero h1:not(.section-title):not(.no-rule)::after {
+    display: none;
+}
+
+.matches-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--space-5);
+    margin-top: var(--space-6);
+}
+
+.match-card {
+    display: flex;
+}
+
+.match-info {
+    flex: 2;
+    padding: var(--space-4);
+}
+
+.teams {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--space-4);
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.team img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: var(--space-1);
+}
+
+.vs {
+    font-weight: bold;
+    margin: 0 var(--space-4);
+    color: var(--grana);
+}
+
+.match-details p {
+    margin: var(--space-2) 0;
+    font-size: var(--fs-caption);
+}
+
+.match-details strong {
+    color: var(--grana);
+}
+
+.ticket-options {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--brand-gradient-vertical);
+    padding: var(--space-4);
+    color: #fff;
+}
+
+.price-range {
+    text-align: center;
+    margin-bottom: var(--space-4);
+}
+
+.from {
+    display: block;
+    font-size: 0.8rem;
+}
+
+.price {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.buy-btn {
+    padding: var(--space-2) var(--space-4);
+    background: var(--amarillo);
+    color: var(--ink);
+    border: none;
+    border-radius: var(--radius-sm);
+    font-weight: bold;
+    text-decoration: none;
+    transition:
+        transform var(--dur-base) var(--ease-out),
+        box-shadow var(--dur-base) var(--ease-out),
+        background-color var(--dur-base) var(--ease-out);
+}
+
+.buy-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-2);
+}
+
+.buy-btn:active {
+    transform: scale(0.97);
+    transition-duration: var(--dur-press);
+}
+
+.map-container {
+    display: flex;
+    gap: 40px;
+    margin-top: var(--space-6);
+}
+
+.map-image {
+    flex: 2;
+    position: relative;
+}
+
+.map-image img {
+    width: 100%;
+    border-radius: var(--radius-md);
+}
+
+.tribuna-info,
+.lateral-info,
+.fondo-info,
+.gol-info {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.9);
+    padding: var(--space-4);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-2);
+    width: 200px;
+}
+
+.tribuna-info {
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.lateral-info {
+    top: 30%;
+    left: 10%;
+}
+
+.fondo-info {
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.gol-info {
+    top: 50%;
+    right: 10%;
+}
+
+.map-image h3 {
+    margin-bottom: var(--space-1);
+}
+
+.price {
+    font-weight: bold;
+    color: var(--azul);
+    margin: var(--space-1) 0;
+}
+
+.ticket-options .price {
+    color: var(--on-brand);
+}
+
+.description {
+    font-size: 0.8rem;
+    margin-bottom: var(--space-2);
+}
+
+.select-btn {
+    width: 100%;
+    padding: var(--space-2);
+    background: var(--azul);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: background-color var(--dur-fast) var(--ease-out);
+}
+
+.select-btn:hover {
+    background: var(--grana);
+}
+
+.seat-selection {
+    flex: 1;
+    background: var(--surface);
+    padding: var(--space-5);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-1);
+}
+
+.seat-selection h3 {
+    margin-bottom: var(--space-1);
+}
+
+.match-date {
+    color: var(--muted);
+    margin-bottom: var(--space-4);
+    font-size: var(--fs-caption);
+}
+
+.selected-area {
+    background: var(--surface-2);
+    padding: var(--space-4);
+    border-radius: var(--radius-sm);
+    margin-bottom: var(--space-4);
+}
+
+.selected-area h4 {
+    margin-bottom: var(--space-2);
+    color: var(--azul);
+}
+
+.price-display {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--fs-subhead);
+}
+
+.value {
+    font-weight: bold;
+    color: var(--grana);
+}
+
+.quantity-selector {
+    margin-bottom: var(--space-4);
+}
+
+.quantity-selector label {
+    display: block;
+    margin-bottom: var(--space-2);
+    color: var(--azul);
+}
+
+.quantity-selector select {
+    width: 100%;
+    padding: var(--space-2);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+}
+
+.total-price {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    margin: var(--space-5) 0;
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--line);
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: var(--space-4);
+    background: var(--amarillo);
+    color: var(--ink);
+    border: none;
+    border-radius: var(--radius-sm);
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition:
+        transform var(--dur-base) var(--ease-out),
+        box-shadow var(--dur-base) var(--ease-out),
+        background-color var(--dur-base) var(--ease-out);
+}
+
+.checkout-btn:hover {
+    background: #e6d100;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-2);
+}
+
+.checkout-btn:active {
+    transform: scale(0.97);
+    transition-duration: var(--dur-press);
+}
+
+.benefits {
+    margin-top: var(--space-6);
+}
+
+.benefits h4 {
+    color: var(--azul);
+    margin-bottom: var(--space-2);
+}
+
+.benefits li {
+    margin-bottom: var(--space-1);
+    font-size: var(--fs-caption);
+}
+
+.membership-promo {
+    display: flex;
+    background: var(--brand-gradient);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    color: #fff;
+}
+
+.promo-content {
+    flex: 1;
+    padding: 40px;
+}
+
+.promo-content h2 {
+    color: #fff;
+    text-align: left;
+    font-size: 2rem;
+    margin-bottom: var(--space-4);
+}
+
+.promo-content h2:not(.section-title):not(.no-rule)::after {
+    display: none;
+}
+
+.promo-content p {
+    margin-bottom: var(--space-4);
+    line-height: var(--lh-body);
+}
+
+.promo-content ul {
+    margin-bottom: var(--space-6);
+}
+
+.promo-content li {
+    margin-bottom: var(--space-2);
+}
+
+.promo-buttons {
+    display: flex;
+    gap: var(--space-4);
+}
+
+.member-btn,
+.login-btn {
+    padding: var(--space-3) var(--space-5);
+    border-radius: var(--radius-sm);
+    font-weight: bold;
+    text-decoration: none;
+    transition:
+        transform var(--dur-base) var(--ease-out),
+        box-shadow var(--dur-base) var(--ease-out),
+        background-color var(--dur-base) var(--ease-out),
+        border-color var(--dur-base) var(--ease-out),
+        color var(--dur-base) var(--ease-out);
+}
+
+.member-btn {
+    background: var(--amarillo);
+    color: var(--ink);
+}
+
+.login-btn {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.member-btn:hover,
+.login-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-2);
+}
+
+.member-btn:active,
+.login-btn:active {
+    transform: scale(0.97);
+    transition-duration: var(--dur-press);
+}
+
+.promo-image {
+    flex: 1;
+}
+
+.promo-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+    .map-container {
+        flex-direction: column;
+    }
+
+    .membership-promo {
+        flex-direction: column;
+    }
+
+    .promo-image {
+        order: -1;
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tickets-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .match-card {
+        flex-direction: column;
+    }
+
+    .tribuna-info,
+    .lateral-info,
+    .fondo-info,
+    .gol-info {
+        position: static;
+        width: 100%;
+        margin-bottom: var(--space-4);
+    }
+
+    .map-image {
+        margin-bottom: var(--space-6);
+    }
+}
+
+@media (max-width: 480px) {
+    .matches-container {
+        grid-template-columns: 1fr;
+    }
+
+    .promo-buttons {
+        flex-direction: column;
+    }
+}

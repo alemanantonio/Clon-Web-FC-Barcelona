@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web del FC Barcelona</title>
+    <link rel="icon" href="../../assets/fc-barcelona.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../../styles/base.css">
+    <link rel="stylesheet" href="../../styles/profile.css">
+</head>
+<body>
+    <header id="mainHeader">
+        <div class="header-content">
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <nav id="mainNav">
+                <div class="nav-item">
+                    Primer Equipo
+                    <div class="dropdown">
+                        <a href="../players.html">Jugadores</a>
+                        <a href="../tickets.html">Entradas</a>
+                        <a href="../standings.html">Clasificacion</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    Noticias 
+                    <div class="dropdown">
+                        <a href="../latest-news.html">Últimas Noticias</a>
+                        <a href="../upcoming-matches.html">Próximos Partidos</a>
+                        <a href="../results.html">Resultados</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    Historia
+                    <div class="dropdown">
+                        <a href="../history.html">Historia del Club</a>
+                        <a href="../trophies.html">Títulos</a>
+                        <a href="../stadium.html">Estadio</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    Más Equipos
+                    <div class="dropdown">
+                        <a href="../women.html">Femenino</a>
+                        <a href="../basketball.html">Baloncesto</a>
+                        <a href="../barca-atletic.html">Barca Atletic</a>
+                    </div>
+                </div>   
+            </nav>
+            
+            <div class="logo-container">
+                <a href="../../index.html">    
+                <img class="logo" src="../../assets/fc-barcelona.svg" alt="Logo del FC Barcelona">
+                </a>
+            </div>
+
+            <div class="header-right-container">
+                <div class="header-right">
+                    <a href="../membership.html" class="cta-button cta-button--gold">Hazte Socio</a>
+                    <a href="../tickets.html" class="cta-button cta-button--ghost">Entradas</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="player-profile">
+            <div class="player-header">
+                <div class="player-banner">
+                    <img src="../../assets/player-pages/lewaaccion.webp" alt="Lewandowski celebrando gol" class="banner-img">
+                    <div class="player-overlay">
+                        <h1>Robert Lewandowski</h1>
+                        <div class="player-details">
+                            <span class="player-number">9</span>
+                            <span class="player-position">Delantero Centro</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="player-basic-info">
+                    <div class="info-item">
+                        <span class="info-label">Nombre completo</span>
+                        <span class="info-value">Robert Lewandowski</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Nacimiento</span>
+                        <span class="info-value">21 Agosto 1988 (35 años)</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Nacionalidad</span>
+                        <span class="info-value">
+                            <img src="../../assets/player-pages/polonia.png" alt="Polonia" class="flag-icon"> Polonia
+                        </span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Altura</span>
+                        <span class="info-value">1.85 m</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Debut Barça</span>
+                        <span class="info-value">7 Agosto 2022 vs Pumas UNAM</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Procedencia</span>
+                        <span class="info-value">Bayern Munich (€45M)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="player-content">
+                <article class="player-bio">
+                    <h2>El Rey Goleador</h2>
+                    <div class="bio-content">
+                        <img src="../../assets/players/09-Lewandowski-M.webp" alt="Lewandowski retrato" class="bio-img">
+                        <div class="bio-text">
+                            <p><strong>Robert Lewandowski</strong> es considerado uno de los mejores delanteros de la historia. Nacido en Varsovia, comenzó su carrera en el Znicz Pruszków antes de dar el salto al Lech Poznań, donde su explosión goleadora (32 goles en 2009/10) le valió un fichaje por el Borussia Dortmund.</p>
+                            <p>En el Dortmund (2010-14) se consagró como uno de los mejores del mundo, logrando un histórico <strong>cuádruple gol</strong> al Real Madrid en Champions. Su traspaso al Bayern Munich en 2014 marcó el inicio de una era dominante: <strong>8 Bundesligas consecutivas</strong> y el sextete en 2020.</p>
+                            <p>Fichado por el Barça en 2022, en su primera temporada ganó el <strong>Pichichi</strong> con 23 goles, demostrando su adaptación inmediata. Renovó hasta 2026 con opción a 2027.</p>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="player-stats">
+                    <h2>Estadísticas 2023/24</h2>
+                    <div class="stats-tabs">
+                        <button class="tab-btn active" data-tab="club">Club</button>
+                        <button class="tab-btn" data-tab="national">Selección</button>
+                        <button class="tab-btn" data-tab="career">Carrera</button>
+                    </div>
+                    
+                    <div class="stats-content active" id="club-stats">
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <span class="stat-number">42</span>
+                                <span class="stat-label">Partidos</span>
+                            </div>
+                            <div class="stat-card highlight">
+                                <span class="stat-number">24</span>
+                                <span class="stat-label">Goles</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">9</span>
+                                <span class="stat-label">Asistencias</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">3.5</span>
+                                <span class="stat-label">Tiros p/j</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">81%</span>
+                                <span class="stat-label">Pases acertados</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">4</span>
+                                <span class="stat-label">MVP del partido</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">7</span>
+                                <span class="stat-label">Goles de cabeza</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">5</span>
+                                <span class="stat-label">Dobletes</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="stats-content" id="national-stats">
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <span class="stat-number">8</span>
+                                <span class="stat-label">Partidos</span>
+                            </div>
+                            <div class="stat-card highlight">
+                                <span class="stat-number">5</span>
+                                <span class="stat-label">Goles</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">2</span>
+                                <span class="stat-label">Asistencias</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">148</span>
+                                <span class="stat-label">Goles total</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">82</span>
+                                <span class="stat-label">Capitan</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="stats-content" id="career-stats">
+                        <div class="stats-grid">
+                            <div class="stat-card highlight">
+                                <span class="stat-number">645</span>
+                                <span class="stat-label">Goles total</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">850</span>
+                                <span class="stat-label">Partidos</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">0.76</span>
+                                <span class="stat-label">Ratio gol/partido</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">12</span>
+                                <span class="stat-label">Títulos Bundesliga</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">1</span>
+                                <span class="stat-label">Champions</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">2</span>
+                                <span class="stat-label">Mejor Jugador FIFA</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="player-trophies">
+                    <h2>Palmarés Legendario</h2>
+                    <div class="trophies-container">
+                        <div class="trophy-category">
+                            <h3>🏆 FC Barcelona</h3>
+                            <ul>
+                                <li>1 Liga (2022/23)</li>
+                                <li>1 Supercopa España (2022/23)</li>
+                                <li>1 Pichichi (2022/23)</li>
+                            </ul>
+                        </div>
+                        <div class="trophy-category">
+                            <h3>🔴 Bayern Munich</h3>
+                            <ul>
+                                <li>1 Champions League (2019/20)</li>
+                                <li>8 Bundesligas</li>
+                                <li>3 Copas Alemania</li>
+                                <li>1 Mundial de Clubes</li>
+                                <li>7 Máximos Goleadores</li>
+                            </ul>
+                        </div>
+                        <div class="trophy-category">
+                            <h3>🏅 Individuales</h3>
+                            <ul>
+                                <li>2 The Best FIFA (2020, 2021)</li>
+                                <li>1 Balón de Oro Striker (2021)</li>
+                                <li>Máximo Goleador Champions (2019/20)</li>
+                                <li>Récord 41 goles en Bundesliga (2021)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="player-highlights">
+                    <h2>Goles Épicos</h2>
+                    <div class="highlight-videos">
+                        <div class="video-card">
+                            <img src="../../assets/player-pages/lewa3valencia.webp" alt="Lewandowski hat-trick" class="video-thumbnail">
+                            <div class="video-info">
+                                <h3>Hat-trick vs Valencia (2022)</h3>
+                                <p>Debut goleador en Champions con el Barça</p>
+                                <a href="https://www.youtube.com/watch?v=iBOSupqUiQQ">
+                                <button class="btn-watch">▶ Ver goles</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <img src="../../assets/player-pages/lewa5goles.jpg" alt="Lewandowski 5 goles" class="video-thumbnail">
+                            <div class="video-info">
+                                <h3>5 goles en 9 minutos</h3>
+                                <p>Récord mundial vs Wolfsburgo (2015)</p>
+                                <a href="https://www.youtube.com/watch?v=TthnLjCrMTg">
+                                <button class="btn-watch">▶ Ver goles</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <img src="../../assets/player-pages/lewadoblete.jpg" alt="Lewandowski Clásico" class="video-thumbnail">
+                            <div class="video-info">
+                                <h3>Doblete en el Clásico</h3>
+                                <p>Goles clave en Supercopa 2023</p>
+                                <a href="https://www.youtube.com/shorts/34sTzOmfqUY">
+                                <button class="btn-watch">▶ Ver goles</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="player-records">
+                    <h2>Récords Históricos</h2>
+                    <div class="records-grid">
+                        <div class="record-card">
+                            <h3>⚽ Máximo goleador extranjero Bundesliga</h3>
+                            <p>312 goles con Bayern y Dortmund</p>
+                        </div>
+                        <div class="record-card">
+                            <h3>🔥 Único jugador con 40+ goles en 6 temporadas</h3>
+                            <p>En las 5 grandes ligas europeas</p>
+                        </div>
+                        <div class="record-card">
+                            <h3>🎯 Récord 41 goles en temporada Bundesliga</h3>
+                            <p>Superando a Gerd Müller (2021)</p>
+                        </div>
+                        <div class="record-card">
+                            <h3>⚡ 5 goles en 9 minutos</h3>
+                            <p>Récord Guinness vs Wolfsburgo</p>
+                        </div>
+                        <div class="record-card">
+                            <h3>👑 Máximo goleador polaco en Champions</h3>
+                            <p>94 goles (y contando)</p>
+                        </div>
+                        <div class="record-card">
+                            <h3>💎 Jugador con más goles en 2020 (47)</h3>
+                            <p>Superando a Pelé y Messi</p>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="player-style">
+                    <h2>Estilo de Juego</h2>
+                    <div class="style-content">
+                        <div class="style-text">
+                            <p>Lewandowski es el <strong>delantero centro completo</strong>. Su juego combina:</p>
+                            <ul>
+                                <li><strong>Posicionamiento:</strong> Lectura excepcional del juego</li>
+                                <li><strong>Remate:</strong> Precisión con ambos pies y cabeza</li>
+                                <li><strong>Fuerza física:</strong> Excelente en el juego aéreo</li>
+                                <li><strong>Técnica:</strong> Control orientado y regate eficaz</li>
+                                <li><strong>Asistencias:</strong> Visión para el pase (50+ con el Barça)</li>
+                            </ul>
+                            <p>Xavi ha dicho: <em>"Robert es un profesor dentro del campo. Su capacidad para llegar al área en el momento justo es de otro nivel"</em>.</p>
+                        </div>
+                        <div class="style-image">
+                            <div class="style-quote">
+                                <blockquote>"Quiero ganar la Champions con el Barça antes de retirarme"</blockquote>
+                                <cite>- Lewandowski, 2024</cite>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    
+        
+        <script>
+            // Funcionalidad de pestañas
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remover clase active de todos los botones y contenidos
+                    document.querySelector('.tab-btn.active').classList.remove('active');
+                    document.querySelector('.stats-content.active').classList.remove('active');
+                    
+                    // Añadir clase active al botón clickeado
+                    btn.classList.add('active');
+                    
+                    // Mostrar el contenido correspondiente
+                    const tabId = btn.getAttribute('data-tab');
+                    document.getElementById(`${tabId}-stats`).classList.add('active');
+                });
+            });
+        </script>
+    </main>
+
+    <footer id="mainFooter">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Porteros</h3>
+                <p><a href="../players/ter-stegen.html">Ter Stegen</a></p>
+                <p><a href="../players/szczesny.html">Szczęsny</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Defensas</h3>
+                <p><a href="../players/araujo.html">Araújo</a></p>
+                <p><a href="../players/kounde.html">Koundé</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Centrocampistas</h3>
+                <p><a href="../players/pedri.html">Pedri</a></p>
+                <p><a href="../players/gavi.html">Gavi</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Delanteros</h3>
+                <p><a href="../players/lewandowski.html">Lewandowski</a></p>
+                <p><a href="../players/yamal.html">Yamal</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociales</h3>
+                <p><a href="https://www.fcbarcelona.es/es/">Pagina Oficial</a></p>
+                <p><a href="https://www.instagram.com/fcbarcelona/">Instagram</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Club</h3>
+                <p><a href="../stadium.html">Estadio</a></p>
+                <p><a href="../history.html">Historia</a></p>
+            </div>
+        </div>
+    </footer>
+
+<script src="../../scripts/site.js" defer></script>
+</body>
+</html>

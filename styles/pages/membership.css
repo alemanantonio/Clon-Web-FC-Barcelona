@@ -1,0 +1,208 @@
+.membership-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.58)),
+    url("../../assets/Campnouint.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.benefits-grid,
+.membership-cards,
+.testimonial-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  gap: var(--space-6);
+}
+
+.benefit-card {
+  padding: var(--space-6);
+  text-align: center;
+}
+
+.benefit-icon {
+  font-size: 3rem;
+  line-height: 1;
+  margin-bottom: var(--space-5);
+}
+
+.benefit-card h3 {
+  margin-bottom: var(--space-3);
+}
+
+.membership-card {
+  position: relative;
+  padding: var(--space-6);
+  border: 2px solid transparent;
+  overflow: visible;
+  transition:
+    transform var(--dur-base) var(--ease-out),
+    box-shadow var(--dur-base) var(--ease-out),
+    border-color var(--dur-fast) var(--ease-out);
+}
+
+.membership-card:hover {
+  border-color: var(--grana);
+}
+
+.membership-card.premium {
+  border-color: var(--amarillo);
+}
+
+.recommended {
+  position: absolute;
+  top: -12px;
+  right: var(--space-5);
+  padding: var(--space-1) var(--space-4);
+  background: var(--amarillo);
+  color: var(--ink);
+  border-radius: var(--radius-pill);
+  font-size: var(--fs-caption);
+  font-weight: 700;
+  letter-spacing: var(--tracking-caption);
+}
+
+.membership-card h3 {
+  margin-bottom: var(--space-4);
+}
+
+.price {
+  font-size: var(--fs-display);
+  font-weight: 800;
+  letter-spacing: var(--tracking-display);
+  line-height: 1;
+  color: var(--azul);
+  margin-bottom: var(--space-5);
+}
+
+.price span {
+  font-size: var(--fs-body);
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.features {
+  margin-bottom: var(--space-6);
+}
+
+.features li {
+  margin-bottom: var(--space-3);
+  line-height: var(--lh-body);
+}
+
+.join-btn {
+  display: block;
+  width: 100%;
+  padding: var(--space-4);
+  border: 0;
+  background: var(--brand-gradient);
+  color: var(--on-brand);
+  border-radius: var(--radius-sm);
+  font: inherit;
+  font-size: var(--fs-subhead);
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: var(--shadow-1);
+  transition:
+    transform var(--dur-base) var(--ease-out),
+    box-shadow var(--dur-base) var(--ease-out);
+}
+
+.join-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-2);
+}
+
+.join-btn:active {
+  transform: scale(0.97);
+  transition-duration: var(--dur-press);
+}
+
+.membership-card.premium .join-btn {
+  background: var(--amarillo);
+  color: var(--ink);
+}
+
+.membership-stats {
+  background: var(--brand-gradient);
+  padding: var(--space-8) var(--space-5);
+  border-radius: var(--radius-lg);
+  color: var(--on-brand);
+  text-align: center;
+}
+
+.membership-stats h2 {
+  color: var(--on-brand);
+}
+
+.membership-stats h2:not(.section-title):not(.no-rule)::after,
+.cta-section h2:not(.section-title):not(.no-rule)::after {
+  display: none;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-6);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.stat-card {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: var(--fs-display);
+  font-weight: 800;
+  letter-spacing: var(--tracking-display);
+  line-height: 1;
+  margin-bottom: var(--space-3);
+}
+
+.quote {
+  position: relative;
+  font-style: italic;
+  line-height: var(--lh-body);
+  margin-bottom: var(--space-5);
+}
+
+.quote::before {
+  content: "\201C";
+  position: absolute;
+  top: -20px;
+  left: -10px;
+  font-size: 3rem;
+  color: var(--azul);
+  opacity: 0.3;
+}
+
+.author {
+  font-weight: 700;
+}
+
+.info {
+  font-size: var(--fs-caption);
+  color: var(--muted);
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-section {
+  background: var(--brand-gradient);
+  padding: var(--space-9) var(--space-5);
+  border-radius: var(--radius-lg);
+  color: var(--on-brand);
+  text-align: center;
+}
+
+.cta-section h2 {
+  color: var(--on-brand);
+}
+
+.cta-section p {
+  font-size: var(--fs-subhead);
+  max-width: 600px;
+  margin: 0 auto var(--space-6);
+}

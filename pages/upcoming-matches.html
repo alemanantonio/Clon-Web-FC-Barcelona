@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web del FC Barcelona</title>
+    <link rel="icon" href="../assets/fc-barcelona.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/pages/upcoming-matches.css">
+</head>
+<body>
+    <header id="mainHeader">
+        <div class="header-content">
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <nav id="mainNav">
+                <div class="nav-item">
+                    Primer Equipo
+                    <div class="dropdown">
+                        <a href="players.html">Jugadores</a>
+                        <a href="tickets.html">Entradas</a>
+                        <a href="standings.html">Clasificacion</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    Noticias 
+                    <div class="dropdown">
+                        <a href="latest-news.html">Últimas Noticias</a>
+                        <a href="upcoming-matches.html">Próximos Partidos</a>
+                        <a href="results.html">Resultados</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    Historia
+                    <div class="dropdown">
+                        <a href="history.html">Historia del Club</a>
+                        <a href="trophies.html">Títulos</a>
+                        <a href="stadium.html">Estadio</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    Más Equipos
+                    <div class="dropdown">
+                        <a href="women.html">Femenino</a>
+                        <a href="basketball.html">Baloncesto</a>
+                        <a href="barca-atletic.html">Barca Atletic</a>
+                    </div>
+                </div>   
+            </nav>
+            
+            <div class="logo-container">
+                <a href="../index.html">   
+                <img class="logo" src="../assets/fc-barcelona.svg" alt="Logo del FC Barcelona">
+                </a>
+            </div>
+
+            <div class="header-right-container">
+                <div class="header-right">
+                    <a href="membership.html" class="cta-button cta-button--gold">Hazte Socio</a>
+                    <a href="tickets.html" class="cta-button cta-button--ghost">Entradas</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="upcoming-matches">
+            <h1>Próximos Partidos</h1>
+            <div class="season-filter">
+                <button class="active">Temporada 2023/24</button>
+                <button>Temporada 2024/25</button>
+            </div>
+            
+            <div class="match-grid">
+                <!-- Partido 1 -->
+                <article class="match-card">
+                    <div class="match-header">
+                        <span class="competition">
+                            <img src="../assets/upcoming-matches/laliga.png" alt="La Liga" class="competition-icon">
+                            La Liga - Jornada 38
+                        </span>
+                        <span class="match-date">26 Mayo 2024 - 21:00</span>
+                    </div>
+                    
+                    <div class="teams-container">
+                        <div class="team">
+                            <img src="../assets/fc-barcelona.svg   " alt="FC Barcelona" class="team-logo">
+                            <span class="team-name">FC Barcelona</span>
+                        </div>
+                        
+                        <div class="match-details">
+                            <span class="vs">VS</span>
+                            <span class="stadium">Estadio de Son Moix</span>
+                        </div>
+                        
+                        <div class="team">
+                            <img src="../assets/standings/sevilla.png" alt="Sevilla FC" class="team-logo">
+                            <span class="team-name">Sevilla FC</span>
+                        </div>
+                    </div>
+                    
+                    <div class="match-actions">
+                        <button class="btn-reminder">⏰ Recordar</button>
+                        <button class="btn-tickets">🎟️ Entradas</button>
+                        <button class="btn-tv">📺 Ver en TV</button>
+                    </div>
+                </article>
+                
+                <!-- Partido 2 - Champions -->
+                <article class="match-card highlight">
+                    <div class="match-header">
+                        <span class="competition">
+                            <img src="../assets/upcoming-matches/champions.png" alt="Champions League" class="competition-icon">
+                            Champions League - Final
+                        </span>
+                        <span class="match-date">1 Junio 2024 - 20:00</span>
+                    </div>
+                    
+                    <div class="teams-container">
+                        <div class="team">
+                            <img src="../assets/fc-barcelona.svg" alt="FC Barcelona" class="team-logo">
+                            <span class="team-name">FC Barcelona</span>
+                        </div>
+                        
+                        <div class="match-details">
+                            <span class="vs">VS</span>
+                            <span class="stadium">Wembley Stadium</span>
+                        </div>
+                        
+                        <div class="team">
+                            <img src="../assets/standings/bayernmunchen.png" alt="Bayern Munich" class="team-logo">
+                            <span class="team-name">Bayern Munich</span>
+                        </div>
+                    </div>
+                    
+                    <div class="match-actions">
+                        <button class="btn-reminder">⏰ Recordar</button>
+                        <button class="btn-tickets">🎟️ Entradas</button>
+                        <button class="btn-tv">📺 Ver en TV</button>
+                    </div>
+                </article>
+                
+                <!-- Partido 3 -->
+                <article class="match-card">
+                    <div class="match-header">
+                        <span class="competition">
+                            <img src="../assets/upcoming-matches/uefa.png" alt="Amistoso" class="competition-icon">
+                            Amistoso Internacional
+                        </span>
+                        <span class="match-date">10 Agosto 2024 - 19:30</span>
+                    </div>
+                    
+                    <div class="teams-container">
+                        <div class="team">
+                            <img src="../assets/fc-barcelona.svg" alt="FC Barcelona" class="team-logo">
+                            <span class="team-name">FC Barcelona</span>
+                        </div>
+                        
+                        <div class="match-details">
+                            <span class="vs">VS</span>
+                            <span class="stadium">Camp Nou</span>
+                        </div>
+                        
+                        <div class="team">
+                            <img src="../assets/upcoming-matches/manchesterunited.png" alt="Manchester United" class="team-logo">
+                            <span class="team-name">Manchester United</span>
+                        </div>
+                    </div>
+                    
+                    <div class="match-actions">
+                        <button class="btn-reminder">⏰ Recordar</button>
+                        <button class="btn-tickets">🎟️ Entradas</button>
+                        <button class="btn-tv">📺 Ver en TV</button>
+                    </div>
+                </article>
+                
+                <!-- Partido 4 -->
+                <article class="match-card">
+                    <div class="match-header">
+                        <span class="competition">
+                            <img src="../assets/upcoming-matches/laliga.png" alt="La Liga" class="competition-icon">
+                            La Liga - Jornada 1
+                        </span>
+                        <span class="match-date">18 Agosto 2024 - 18:30</span>
+                    </div>
+                    
+                    <div class="teams-container">
+                        <div class="team">
+                            <img src="../assets/fc-barcelona.svg" alt="FC Barcelona" class="team-logo">
+                            <span class="team-name">FC Barcelona</span>
+                        </div>
+                        
+                        <div class="match-details">
+                            <span class="vs">VS</span>
+                            <span class="stadium">Camp Nou</span>
+                        </div>
+                        
+                        <div class="team">
+                            <img src="../assets/standings/valencia.png" alt="Valencia CF" class="team-logo">
+                            <span class="team-name">Valencia CF</span>
+                        </div>
+                    </div>
+                    
+                    <div class="match-actions">
+                        <button class="btn-reminder">⏰ Recordar</button>
+                        <button class="btn-tickets">🎟️ Entradas</button>
+                        <button class="btn-tv">📺 Ver en TV</button>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="calendar-section">
+                <h2>Calendario Completo</h2>
+                <div class="calendar-container">
+                    <div class="month-selector">
+                        <button class="prev-month">◀</button>
+                        <h3>Mayo 2024</h3>
+                        <button class="next-month">▶</button>
+                    </div>
+                    <div class="calendar-grid">
+                        <div class="day-header">Lun</div>
+                        <div class="day-header">Mar</div>
+                        <div class="day-header">Mié</div>
+                        <div class="day-header">Jue</div>
+                        <div class="day-header">Vie</div>
+                        <div class="day-header">Sáb</div>
+                        <div class="day-header">Dom</div>
+                        
+                        <!-- Días del mes -->
+                        <div class="empty-day"></div>
+                        <div class="empty-day"></div>
+                        <div class="calendar-day">1</div>
+                        <div class="calendar-day">2</div>
+                        <div class="calendar-day">3</div>
+                        <div class="calendar-day">4</div>
+                        <div class="calendar-day">5</div>
+                        <div class="calendar-day">6</div>
+                        <div class="calendar-day">7</div>
+                        <div class="calendar-day">8</div>
+                        <div class="calendar-day">9</div>
+                        <div class="calendar-day">10</div>
+                        <div class="calendar-day">11</div>
+                        <div class="calendar-day match-day">
+                            12
+                            <span class="match-tooltip">vs Sociedad (Liga)</span>
+                        </div>
+                        <div class="calendar-day">13</div>
+                        <div class="calendar-day">14</div>
+                        <div class="calendar-day">15</div>
+                        <div class="calendar-day">16</div>
+                        <div class="calendar-day">17</div>
+                        <div class="calendar-day">18</div>
+                        <div class="calendar-day">19</div>
+                        <div class="calendar-day match-day">
+                            20
+                            <span class="match-tooltip">vs Bayern (UCL)</span>
+                        </div>
+                        <div class="calendar-day">21</div>
+                        <div class="calendar-day">22</div>
+                        <div class="calendar-day">23</div>
+                        <div class="calendar-day">24</div>
+                        <div class="calendar-day">25</div>
+                        <div class="calendar-day match-day highlight">
+                            26
+                            <span class="match-tooltip">vs Sevilla (Liga)</span>
+                        </div>
+                        <div class="calendar-day">27</div>
+                        <div class="calendar-day">28</div>
+                        <div class="calendar-day">29</div>
+                        <div class="calendar-day">30</div>
+                        <div class="calendar-day">31</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    </main>
+
+    <footer id="mainFooter">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Porteros</h3>
+                <p><a href="players/ter-stegen.html">Ter Stegen</a></p>
+                <p><a href="players/szczesny.html">Szczęsny</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Defensas</h3>
+                <p><a href="players/araujo.html">Araújo</a></p>
+                <p><a href="players/kounde.html">Koundé</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Centrocampistas</h3>
+                <p><a href="players/pedri.html">Pedri</a></p>
+                <p><a href="players/gavi.html">Gavi</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Delanteros</h3>
+                <p><a href="players/lewandowski.html">Lewandowski</a></p>
+                <p><a href="players/yamal.html">Yamal</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociales</h3>
+                <p><a href="https://www.fcbarcelona.es/es/">Pagina Oficial</a></p>
+                <p><a href="https://www.instagram.com/fcbarcelona/">Instagram</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Club</h3>
+                <p><a href="stadium.html">Estadio</a></p>
+                <p><a href="history.html">Historia</a></p>
+            </div>
+        </div>
+    </footer>
+
+<script src="../scripts/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+.campnou-history {
+    padding: var(--space-5);
+}
+
+.campnou-history h1 {
+    margin-bottom: var(--space-7);
+}
+
+.history-section h2 {
+    color: var(--azul);
+    font-size: var(--fs-heading);
+}
+
+@media (max-width: 768px) {
+    .campnou-history {
+        padding: var(--space-4);
+    }
+}

@@ -1,0 +1,81 @@
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.6)),
+    url("../assets/Campnouaerea.jpg");
+}
+
+.players-grid img,
+.legends-grid img {
+  height: clamp(220px, 26vw, 300px);
+}
+
+.legends-grid .legend-card > a > p:first-of-type {
+  padding-bottom: var(--space-1);
+  color: var(--azul);
+  font-weight: 600;
+  letter-spacing: var(--tracking-caption);
+}
+
+.legends-grid .legend-card > a > p:last-of-type {
+  padding-bottom: var(--space-5);
+}
+
+.stadium-content {
+  display: flex;
+  align-items: center;
+  gap: var(--space-9);
+}
+
+.stadium-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.stadium-info ul {
+  margin-top: var(--space-5);
+}
+
+.stadium-images {
+  flex: 1;
+  display: grid;
+  gap: var(--space-5);
+}
+
+.stadium-images img {
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-1);
+}
+
+.trophies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-8);
+}
+
+.trophy {
+  max-width: 210px;
+  text-align: center;
+}
+
+.trophy img {
+  width: 104px;
+  height: 104px;
+  margin: 0 auto var(--space-4);
+  object-fit: contain;
+}
+
+.trophy p {
+  color: var(--muted);
+  font-size: var(--fs-caption);
+}
+
+@media (max-width: 768px) {
+  .stadium-content {
+    flex-direction: column;
+    gap: var(--space-6);
+  }
+
+  .trophies-container {
+    gap: var(--space-6);
+  }
+}

@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web del FC Barcelona</title>
+    <link rel="icon" href="../assets/fc-barcelona.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/pages/players.css">
+</head>
+<body>
+    <header id="mainHeader">
+        <div class="header-content">
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <nav id="mainNav">
+                <div class="nav-item">
+                    Primer Equipo
+                    <div class="dropdown">
+                        <a href="players.html">Jugadores</a>
+                        <a href="tickets.html">Entradas</a>
+                        <a href="standings.html">Clasificacion</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    Noticias 
+                    <div class="dropdown">
+                        <a href="latest-news.html">Últimas Noticias</a>
+                        <a href="upcoming-matches.html">Próximos Partidos</a>
+                        <a href="results.html">Resultados</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    Historia
+                    <div class="dropdown">
+                        <a href="history.html">Historia del Club</a>
+                        <a href="trophies.html">Títulos</a>
+                        <a href="stadium.html">Estadio</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    Más Equipos
+                    <div class="dropdown">
+                        <a href="women.html">Femenino</a>
+                        <a href="basketball.html">Baloncesto</a>
+                        <a href="barca-atletic.html">Barca Atletic</a>
+                    </div>
+                </div>   
+            </nav>
+            
+            <div class="logo-container">
+                <a href="../index.html">   
+                <img class="logo" src="../assets/fc-barcelona.svg" alt="Logo del FC Barcelona">
+                </a>
+            </div>
+
+            <div class="header-right-container">
+                <div class="header-right">
+                    <a href="membership.html" class="cta-button cta-button--gold">Hazte Socio</a>
+                    <a href="tickets.html" class="cta-button cta-button--ghost">Entradas</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="players-hero hero">
+            <div class="hero-content">
+                <h1>Plantilla del FC Barcelona</h1>
+                <p class="motto">Temporada 2024/2025</p>
+            </div>
+        </section>
+    
+        <section class="squad-section">
+            <div class="squad-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="goalkeeper">Porteros</button>
+                <button class="filter-btn" data-filter="defender">Defensas</button>
+                <button class="filter-btn" data-filter="midfielder">Centrocampistas</button>
+                <button class="filter-btn" data-filter="forward">Delanteros</button>
+            </div>
+    
+            <div class="players-grid">
+                <!-- Porteros -->
+                <div class="player-card" data-position="goalkeeper">
+                    <div class="player-image">
+                        <img src="../assets/players/01-Ter_Stegen-M.webp" alt="Ter Stegen">
+                        <div class="player-number">1</div>
+                    </div>
+                    <div class="player-info">
+                        <h3>Marc-André ter Stegen</h3>
+                        <p class="player-position">Portero</p>
+                        <div class="player-stats">
+                            <div class="stat-item">
+                                <span class="stat-value">378</span>
+                                <span class="stat-label">Partidos</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">147</span>
+                                <span class="stat-label">Imbatibilidad</span>
+                            </div>
+                        </div>
+                        <button class="more-info-btn">Ver más</button>
+                    </div>
+                    <div class="player-details">
+                        <p><strong>Edad:</strong> 31 años</p>
+                        <p><strong>Nacionalidad:</strong> Alemania</p>
+                        <p><strong>Debut:</strong> 23/08/2014 vs Elche</p>
+                        <p><strong>Títulos con el Barça:</strong> 5 Ligas, 1 Champions, 5 Copas del Rey</p>
+                        <p><strong>Datos curiosos:</strong> 4º portero con más partidos en la historia del club</p>
+                    </div>
+                </div>
+
+                <div class="player-card" data-position="goalkeeper">
+                    <div class="player-image">
+                        <img src="../assets/players/25-Szczesny-M.webp" alt="Szczęsny">
+                        <div class="player-number">25</div>
+                    </div>
+                    <div class="player-info">
+                        <h3>Wojciech Szczęsny</h3>
+                        <p class="player-position">Portero</p>
+                        <div class="player-stats">
+                            <div class="stat-item">
+                                <span class="stat-value">6</span>
+                                <span class="stat-label">Partidos</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">4</span>
+                                <span class="stat-label">Imbatibilidad</span>
+                            </div>
+                        </div>
+                        <button class="more-info-btn">Ver más</button>
+                    </div>
+                    <div class="player-details">
+                        <p><strong>Edad:</strong> 34 años</p>
+                        <p><strong>Nacionalidad:</strong> Polonia</p>
+                        <p><strong>Debut:</strong> 04/01/2025 vs Barbastro</p>
+                        <p><strong>Títulos con el Barça:</strong>1 SuperCopa de España</p>
+                        <p><strong>Datos curiosos:</strong> 22º portero con más partidos en la historia del club</p>
+                    </div>
+                </div>
+    
+                <!-- Defensas -->
+                <div class="player-card" data-position="defender">
+                    <div class="player-image">
+                        <img src="../assets/players/04-Araujo-M.webp" alt="Ronald Araújo">
+                        <div class="player-number">4</div>
+                    </div>
+                    <div class="player-info">
+                        <h3>Ronald Araújo</h3>
+                        <p class="player-position">Defensa central</p>
+                        <div class="player-stats">
+                            <div class="stat-item">
+                                <span class="stat-value">132</span>
+                                <span class="stat-label">Partidos</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">8</span>
+                                <span class="stat-label">Goles</span>
+                            </div>
+                        </div>
+                        <button class="more-info-btn">Ver más</button>
+                    </div>
+                    <div class="player-details">
+                        <p><strong>Edad:</strong> 24 años</p>
+                        <p><strong>Nacionalidad:</strong> Uruguay</p>
+                        <p><strong>Debut:</strong> 06/10/2019 vs Sevilla</p>
+                        <p><strong>Títulos con el Barça:</strong> 1 Liga, 1 Copa del Rey</p>
+                        <p><strong>Datos curiosos:</strong> Uno de los defensas más rápidos del equipo (34.3 km/h)</p>
+                    </div>
+                </div>
+
+                <div class="player-card" data-position="defender">
+                    <div class="player-image">
+                        <img src="../assets/players/02-Cubarsi-M.webp" alt="Cubarsi">
+                        <div class="player-number">2</div>
+                    </div>
+                    <div class="player-info">
+                        <h3>Pau Cubarsí</h3>
+                        <p class="player-position">Defensa central</p>
+                        <div class="player-stats">
+                            <div class="stat-item">
+                                <span class="stat-value">84</span>
+                                <span class="stat-label">Partidos</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">1</span>
+                                <span class="stat-label">Goles</span>
+                            </div>
+                        </div>
+                        <button class="more-info-btn">Ver más</button>
+                    </div>
+                    <div class="player-details">
+                        <p><strong>Edad:</strong> 18 años</p>
+                        <p><strong>Nacionalidad:</strong> Español</p>
+                        <p><strong>Debut:</strong> 22/01/2024 vs Unionistas de Salamanca</p>
+                        <p><strong>Títulos con el Barça:</strong> 1 SuperCopa de España</p>
+                        <p><strong>Datos curiosos:</strong> Surgió directamente de La Masia, debutando en el primer equipo con muy poca experiencia en categorías superiores, pero mostrando una madurez y solidez defensiva impropias de su edad.</p>
+                    </div>
+                </div>
+
+                <div class="player-card" data-position="defender">
+                    <div class="player-image">
+                        <img src="../assets/players/03-Balde-M.webp" alt="Balde">
+                        <div class="player-number">3</div>
+                    </div>
+                    <div class="player-info">
+                        <h3>Alejandro Balde</h3>
+                        <p class="player-position">Lateral Izquierdo</p>
+                        <div class="player-stats">
+                            <div class="stat-item">
+                                <span class="stat-value">77</span>
+                                <span class="stat-label">Partidos</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">1</span>
+                                <span class="stat-label">Goles</span>
+                            </div>
+                        </div>
+                        <button class="more-info-btn">Ver más</button>
+                    </div>
+                    <div class="player-details">
+                        <p><strong>Edad:</strong> 21 años</p>
+                        <p><strong>Nacionalidad:</strong> Español</p>
+                        <p><strong>Debut:</strong> 14/09/2021 vs Bayern Múnich</p>
+                        <p><strong>Títulos con el Barça:</strong> 1 SuperCopa de España, 1 LaLiga</p>
+                        <p><strong>Datos curiosos:</strong> Es conocido por su gran velocidad y capacidad para incorporarse al ataque desde la banda izquierda, siendo un jugador clave en la transición defensa-ataque del equipo.</p>
+                    </div>
+                </div>
+
+                <div class="player-card" data-position="defender">
+                    <div class="player-image">
+                        <img src="../assets/players/05-Martinez-M.webp" alt="Iñigo">
+                        <div class="player-number">5</div>
+                    </div>
+                    <div class="player-info">
+                        <h3>Iñigo Martínez</h3>
+                        <p class="player-position">Defensa Central</p>
+                        <div class="player-stats">
+                            <div class="stat-item">
+                                <span class="stat-value">23</span>
+                                <span class="stat-label">Partidos</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">1</span>
+                                <span class="stat-label">Goles</span>
+                            </div>
+                        </div>
+                        <button class="more-info-btn">Ver más</button>
+                    </div>
+                    <div class="player-details">
+                        <p><strong>Edad:</strong> 33 años</p>
+                        <p><strong>Nacionalidad:</strong> Español</p>
+                        <p><strong>Debut:</strong> 26/09/2023 vs RCD Mallorca</p>
+                        <p><strong>Títulos con el Barça:</strong> 1 SuperCopa de España, 1 LaLiga</p>
+                        <p><strong>Datos curiosos:</strong> Es un defensor con mucha experiencia en el fútbol español, destacando por su liderazgo, juego aéreo y capacidad para sacar el balón jugado desde la defensa.</p>
+                    </div>
+                </div>
+
+                <div class="player-card" data-position="defender">
+                    <div class="player-image">
+                        <img src="../assets/players/23-Kounde-M.webp" alt="Jules Koundé">
+                        <div class="player-number">23</div>
+                    </div>
+                    <div class="player-info">
+                        <h3>Jules Koundé</h3>
+                        <p class="player-position">Lateral Derecho</p>
+                        <div class="player-stats">
+                            <div class="stat-item">
+                                <span class="stat-value">68</span>
+                                <span class="stat-label">Partidos</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">3</span>
+                                <span class="stat-label">Goles</span>
+                            </div>
+                        </div>
+                        <button class="more-info-btn">Ver más</button>
+                    </div>
+                    <div class="player-details">
+                        <p><strong>Edad:</strong> 25 años</p>
+                        <p><strong>Nacionalidad:</strong> Francia</p>
+                        <p><strong>Debut:</strong> 10/09/2022 vs Cádiz</p>
+                        <p><strong>Títulos con el Barça:</strong> 1 Liga, 1 Supercopa</p>
+                        <p><strong>Datos curiosos:</strong> Jugó como lateral derecho en el Mundial 2022 con Francia</p>
+                    </div>
+                </div>
+    
+                <!-- Centrocampistas -->
+                <div class="player-card" data-position="midfielder">
+                    <div class="player-image">
+                        <img src="../assets/players/08-Pedri-M.webp" alt="Pedri">
+                        <div class="player-number">8</div>
+                    </div>
+                    <div class="player-info">
+                        <h3>Pedri González</h3>
+                        <p class="player-position">Centrocampista</p>
+                        <div class="player-stats">
+                            <div class="stat-item">
+                                <span class="stat-value">112</span>
+                                <span class="stat-label">Partidos</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">16</span>
+                                <span class="stat-label">Goles</span>
+                            </div>
+                        </div>
+                        <button class="more-info-btn">Ver más</button>
+                    </div>
+                    <div class="player-details">
+                        <p><strong>Edad:</strong> 21 años</p>
+                        <p><strong>Nacionalidad:</strong> España</p>
+                        <p><strong>Debut:</strong> 27/09/2020 vs Villarreal</p>
+                        <p><strong>Títulos con el Barça:</strong> 1 Liga, 1 Copa del Rey</p>
+                        <p><strong>Datos curiosos:</strong> Jugador más joven en alcanzar 100 partidos con el Barça en el siglo XXI</p>
+                    </div>
+                </div>
+
+                <div class="player-card" data-position="midfielder">
+                    <div class="player-image">
+                        <img src="../assets/players/06-Gavi-M.webp" alt="Gavi">
+                        <div class="player-number">6</div>
+                    </div>
+                    <div class="player-info">
+                        <h3>Pablo Páez Gavira</h3>
+                        <p class="player-position">Centrocampista</p>
+                        <div class="player-stats">
+                            <div class="stat-item">
+                                <span class="stat-value">111</span>
+                                <span class="stat-label">Partidos</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">7</span>
+                                <span class="stat-label">Goles</span>
+                            </div>
+                        </div>
+                        <button class="more-info-btn">Ver más</button>
+                    </div>
+                    <div class="player-details">
+                        <p><strong>Edad:</strong> 20 años</p>
+                        <p><strong>Nacionalidad:</strong> España</p>
+                        <p><strong>Debut:</strong> 29/08/2021 vs Getafe CF</p>
+                        <p><strong>Títulos con el Barça:</strong> 1 Liga, 1 Copa del Rey</p>
+                        <p><strong>Datos curiosos:</strong> A pesar de su juventud, se consolidó rápidamente como un jugador fundamental en el mediocampo del Barcelona y de la selección española, destacando por su intensidad, garra y calidad técnica.</p>
+                    </div>
+                </div>
+
+                <div class="player-card" data-position="midfielder">
+                    <div class="player-image">
+                        <img src="../assets/players/16-Fermin-M.webp" alt="Fermin">
+                        <div class="player-number">16</div>
+                    </div>
+                    <div class="player-info">
+                        <h3>Fermín López Marín</h3>
+                        <p class="player-position">Centrocampista</p>
+                        <div class="player-stats">
+                            <div class="stat-item">
+                                <span class="stat-value">31</span>
+                                <span class="stat-label">Partidos</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">6</span>
+                                <span class="stat-label">Goles</span>
+                            </div>
+                        </div>
+                        <button class="more-info-btn">Ver más</button>
+                    </div>
+                    <div class="player-details">
+                        <p><strong>Edad:</strong> 22 años</p>
+                        <p><strong>Nacionalidad:</strong> España</p>
+                        <p><strong>Debut:</strong> 27/08/2023 vs Villarreal CF</p>
+                        <p><strong>Títulos con el Barça:</strong> </p>
+                        <p><strong>Datos curiosos:</strong> Al igual que Cubarsí, es otro talento surgido de La Masia que ha irrumpido en el primer equipo, mostrando una gran llegada al área y capacidad para marcar goles.</p>
+                    </div>
+                </div>
+
+                <div class="player-card" data-position="midfielder">
+                    <div class="player-image">
+                        <img src="../assets/players/21-De_Jong-M.webp" alt="Dejong">
+                        <div class="player-number">21</div>
+                    </div>
+                    <div class="player-info">
+                        <h3>Frenkie de Jong</h3>
+                        <p class="player-position">Centrocampista</p>
+                        <div class="player-stats">
+                            <div class="stat-item">
+                                <span class="stat-value">213</span>
+                                <span class="stat-label">Partidos</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">17</span>
+                                <span class="stat-label">Goles</span>
+                            </div>
+                        </div>
+                        <button class="more-info-btn">Ver más</button>
+                    </div>
+                    <div class="player-details">
+                        <p><strong>Edad:</strong> 27 años</p>
+                        <p><strong>Nacionalidad:</strong> Paises Bajos</p>
+                        <p><strong>Debut:</strong> 16/08/2019 vs Athletic ClubF</p>
+                        <p><strong>Títulos con el Barça:</strong> 1 Copa del Rey, 1 LaLiga, 2 SuperCopa de España</p>
+                        <p><strong>Datos curiosos:</strong> Llegó al Barcelona procedente del Ajax, donde fue una pieza clave en el equipo que llegó a las semifinales de la UEFA Champions League en la temporada 2018-2019. Es conocido por su visión de juego, capacidad de pase y habilidad para romper líneas con el balón.</p>
+                    </div>
+                </div>
+    
+                <!-- Delanteros -->
+                <div class="player-card" data-position="forward">
+                    <div class="player-image">
+                        <img src="../assets/players/09-Lewandowski-M.webp" alt="Robert Lewandowski">
+                        <div class="player-number">9</div>
+                    </div>
+                    <div class="player-info">
+                        <h3>Robert Lewandowski</h3>
+                        <p class="player-position">Delantero centro</p>
+                        <div class="player-stats">
+                            <div class="stat-item">
+                                <span class="stat-value">54</span>
+                                <span class="stat-label">Partidos</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">37</span>
+                                <span class="stat-label">Goles</span>
+                            </div>
+                        </div>
+                        <button class="more-info-btn">Ver más</button>
+                    </div>
+                    <div class="player-details">
+                        <p><strong>Edad:</strong> 35 años</p>
+                        <p><strong>Nacionalidad:</strong> Polonia</p>
+                        <p><strong>Debut:</strong> 13/08/2022 vs Rayo Vallecano</p>
+                        <p><strong>Títulos con el Barça:</strong> 1 Liga, 1 Supercopa</p>
+                        <p><strong>Datos curiosos:</strong> Máximo goleador de la Liga 2022/23 con 23 goles</p>
+                    </div>
+                </div>
+
+                <div class="player-card" data-position="forward">
+                    <div class="player-image">
+                        <img src="../assets/players/19-Lamine-M.webp" alt="Lamine Yamal">
+                        <div class="player-number">19</div>
+                    </div>
+                    <div class="player-info">
+                        <h3>Lamine Yamal</h3>
+                        <p class="player-position">Extremo derecho</p>
+                        <div class="player-stats">
+                            <div class="stat-item">
+                                <span class="stat-value">32</span>
+                                <span class="stat-label">Partidos</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">6</span>
+                                <span class="stat-label">Goles</span>
+                            </div>
+                        </div>
+                        <button class="more-info-btn">Ver más</button>
+                    </div>
+                    <div class="player-details">
+                        <p><strong>Edad:</strong> 16 años</p>
+                        <p><strong>Nacionalidad:</strong> España</p>
+                        <p><strong>Debut:</strong> 29/04/2023 vs Betis (15 años)</p>
+                        <p><strong>Títulos con el Barça:</strong> 1 Liga</p>
+                        <p><strong>Datos curiosos:</strong> Jugador más joven en debutar y marcar con el Barça</p>
+                    </div>
+                </div>
+
+                <div class="player-card" data-position="forward">
+                    <div class="player-image">
+                        <img src="../assets/players/07-Ferran_Torres-M.webp" alt="Ferran Torres">
+                        <div class="player-number">7</div>
+                    </div>
+                    <div class="player-info">
+                        <h3>Ferran Torres</h3>
+                        <p class="player-position">Extremo</p>
+                        <div class="player-stats">
+                            <div class="stat-item">
+                                <span class="stat-value">113</span>
+                                <span class="stat-label">Partidos</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">29</span>
+                                <span class="stat-label">Goles</span>
+                            </div>
+                        </div>
+                        <button class="more-info-btn">Ver más</button>
+                    </div>
+                    <div class="player-details">
+                        <p><strong>Edad:</strong> 25 años</p>
+                        <p><strong>Nacionalidad:</strong> España</p>
+                        <p><strong>Debut:</strong> 12/01/2022 vs Real Madrid</p>
+                        <p><strong>Títulos con el Barça:</strong> 1 Liga</p>
+                        <p><strong>Datos curiosos:</strong> Llegó al Barcelona en el mercado de invierno de la temporada 2021-2022 procedente del Manchester City, buscando un mayor protagonismo en el ataque.</p>
+                    </div>
+                </div>
+
+                <div class="player-card" data-position="forward">
+                    <div class="player-image">
+                        <img src="../assets/players/11-Raphinha-M.webp" alt="Raphina">
+                        <div class="player-number">11</div>
+                    </div>
+                    <div class="player-info">
+                        <h3>Raphael Dias Belloli</h3>
+                        <p class="player-position">Extremo</p>
+                        <div class="player-stats">
+                            <div class="stat-item">
+                                <span class="stat-value">80</span>
+                                <span class="stat-label">Partidos</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">50</span>
+                                <span class="stat-label">Goles</span>
+                            </div>
+                        </div>
+                        <button class="more-info-btn">Ver más</button>
+                    </div>
+                    <div class="player-details">
+                        <p><strong>Edad:</strong> 28 años</p>
+                        <p><strong>Nacionalidad:</strong> Brasil</p>
+                        <p><strong>Debut:</strong> 13/08/2022 vs Rayo Vallecano</p>
+                        <p><strong>Títulos con el Barça:</strong> 1 Liga, 1 SuperCopa Española</p>
+                        <p><strong>Datos curiosos:</strong>  Antes de llegar al Barcelona, destacó en el Leeds United de la Premier League por su habilidad regateadora y capacidad goleadora.</p>
+                    </div>
+                </div>
+
+                <div class="player-card" data-position="forward">
+                    <div class="player-image">
+                        <img src="../assets/players/20-Olmo-M.webp" alt="Olmo">
+                        <div class="player-number">20</div>
+                    </div>
+                    <div class="player-info">
+                        <h3>Dani Olmo</h3>
+                        <p class="player-position">Extremo</p>
+                        <div class="player-stats">
+                            <div class="stat-item">
+                                <span class="stat-value">22</span>
+                                <span class="stat-label">Partidos</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">6</span>
+                                <span class="stat-label">Goles</span>
+                            </div>
+                        </div>
+                        <button class="more-info-btn">Ver más</button>
+                    </div>
+                    <div class="player-details">
+                        <p><strong>Edad:</strong> 26 años</p>
+                        <p><strong>Nacionalidad:</strong> Español</p>
+                        <p><strong>Debut:</strong> 13/08/2022 vs Rayo Vallecano</p>
+                        <p><strong>Títulos con el Barça:</strong> 1 SuperCopa Española</p>
+                        <p><strong>Datos curiosos:</strong>  Antes de llegar al Barcelona, destacó en el RB Leipzig.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    
+        <section class="stats-section">
+            <h2>Estadísticas Destacadas</h2>
+            <div class="stats-container">
+                <div class="stat-card">
+                    <h3>Máximos Goleadores</h3>
+                    <div class="stat-table">
+                        <div class="stat-row header">
+                            <span>Jugador</span>
+                            <span>Goles</span>
+                            <span>Partidos</span>
+                        </div>
+                        <div class="stat-row">
+                            <span>1. Lionel Messi</span>
+                            <span>672</span>
+                            <span>778</span>
+                        </div>
+                        <div class="stat-row">
+                            <span>2. César Rodríguez</span>
+                            <span>232</span>
+                            <span>351</span>
+                        </div>
+                        <div class="stat-row">
+                            <span>3. Luis Suárez</span>
+                            <span>198</span>
+                            <span>283</span>
+                        </div>
+                        <div class="stat-row">
+                            <span>4. Laszlo Kubala</span>
+                            <span>194</span>
+                            <span>256</span>
+                        </div>
+                        <div class="stat-row">
+                            <span>5. Josep Samitier</span>
+                            <span>184</span>
+                            <span>454</span>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="stat-card">
+                    <h3>Más Partidos Jugados</h3>
+                    <div class="stat-table">
+                        <div class="stat-row header">
+                            <span>Jugador</span>
+                            <span>Partidos</span>
+                            <span>Años</span>
+                        </div>
+                        <div class="stat-row">
+                            <span>1. Lionel Messi</span>
+                            <span>778</span>
+                            <span>2004-2021</span>
+                        </div>
+                        <div class="stat-row">
+                            <span>2. Xavi Hernández</span>
+                            <span>767</span>
+                            <span>1998-2015</span>
+                        </div>
+                        <div class="stat-row">
+                            <span>3. Sergio Busquets</span>
+                            <span>722</span>
+                            <span>2008-2023</span>
+                        </div>
+                        <div class="stat-row">
+                            <span>4. Gerard Piqué</span>
+                            <span>616</span>
+                            <span>2008-2022</span>
+                        </div>
+                        <div class="stat-row">
+                            <span>5. Carles Puyol</span>
+                            <span>593</span>
+                            <span>1999-2014</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    
+        <script>
+            // Filtrado de jugadores por posición
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelector('.filter-btn.active').classList.remove('active');
+                    btn.classList.add('active');
+                    
+                    const filter = btn.dataset.filter;
+                    const players = document.querySelectorAll('.player-card');
+                    
+                    players.forEach(player => {
+                        if (filter === 'all' || player.dataset.position === filter) {
+                            player.style.display = 'block';
+                        } else {
+                            player.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Mostrar/ocultar detalles del jugador
+            document.querySelectorAll('.more-info-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const card = btn.closest('.player-card');
+                    card.classList.toggle('active');
+                    
+                    btn.textContent = card.classList.contains('active') ? 'Mostrar menos' : 'Ver más';
+                });
+            });
+        </script>
+    </main>
+
+    <footer id="mainFooter">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Porteros</h3>
+                <p><a href="players/ter-stegen.html">Ter Stegen</a></p>
+                <p><a href="players/szczesny.html">Szczęsny</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Defensas</h3>
+                <p><a href="players/araujo.html">Araújo</a></p>
+                <p><a href="players/kounde.html">Koundé</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Centrocampistas</h3>
+                <p><a href="players/pedri.html">Pedri</a></p>
+                <p><a href="players/gavi.html">Gavi</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Delanteros</h3>
+                <p><a href="players/lewandowski.html">Lewandowski</a></p>
+                <p><a href="players/yamal.html">Yamal</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociales</h3>
+                <p><a href="https://www.fcbarcelona.es/es/">Pagina Oficial</a></p>
+                <p><a href="https://www.instagram.com/fcbarcelona/">Instagram</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Club</h3>
+                <p><a href="stadium.html">Estadio</a></p>
+                <p><a href="history.html">Historia</a></p>
+            </div>
+        </div>
+    </footer>
+
+<script src="../scripts/site.js" defer></script>
+</body>
+</html>

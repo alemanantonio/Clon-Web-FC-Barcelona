@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web del FC Barcelona</title>
+    <link rel="icon" href="../../assets/fc-barcelona.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../../styles/base.css">
+    <link rel="stylesheet" href="../../styles/profile.css">
+</head>
+<body>
+    <header id="mainHeader">
+        <div class="header-content">
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <nav id="mainNav">
+                <div class="nav-item">
+                    Primer Equipo
+                    <div class="dropdown">
+                        <a href="../players.html">Jugadores</a>
+                        <a href="../tickets.html">Entradas</a>
+                        <a href="../standings.html">Clasificacion</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    Noticias 
+                    <div class="dropdown">
+                        <a href="../latest-news.html">Últimas Noticias</a>
+                        <a href="../upcoming-matches.html">Próximos Partidos</a>
+                        <a href="../results.html">Resultados</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    Historia
+                    <div class="dropdown">
+                        <a href="../history.html">Historia del Club</a>
+                        <a href="../trophies.html">Títulos</a>
+                        <a href="../stadium.html">Estadio</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    Más Equipos
+                    <div class="dropdown">
+                        <a href="../women.html">Femenino</a>
+                        <a href="../basketball.html">Baloncesto</a>
+                        <a href="../barca-atletic.html">Barca Atletic</a>
+                    </div>
+                </div>   
+            </nav>
+            
+            <div class="logo-container">
+                <a href="../../index.html">  
+                <img class="logo" src="../../assets/fc-barcelona.svg" alt="Logo del FC Barcelona">
+                </a>
+            </div>
+
+            <div class="header-right-container">
+                <div class="header-right">
+                    <a href="../membership.html" class="cta-button cta-button--gold">Hazte Socio</a>
+                    <a href="../tickets.html" class="cta-button cta-button--ghost">Entradas</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="player-profile">
+            <div class="player-header">
+                <div class="player-banner">
+                    <img src="../../assets/player-pages/messiaccion.jpg" alt="Messi en acción" class="banner-img">
+                    <div class="player-overlay">
+                        <h1>Lionel Messi</h1>
+                        <div class="player-details">
+                            <span class="player-number">10</span>
+                            <span class="player-position">Delantero</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="player-basic-info">
+                    <div class="info-item">
+                        <span class="info-label">Nombre completo</span>
+                        <span class="info-value">Lionel Andrés Messi Cuccittini</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Nacimiento</span>
+                        <span class="info-value">24 Junio 1987 (36 años)</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Nacionalidad</span>
+                        <span class="info-value">
+                            <img src="../../assets/player-pages/argentina2.png" alt="Argentina" class="flag-icon"> Argentina
+                        </span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Altura</span>
+                        <span class="info-value">1.70 m</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Debut Barça</span>
+                        <span class="info-value">16 Noviembre 2003 vs Porto</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Procedencia</span>
+                        <span class="info-value">Newell's Old Boys</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Cláusula</span>
+                        <span class="info-value">€700 millones (histórica)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="player-content">
+                <article class="player-bio">
+                    <h2>La Pulga Atómica</h2>
+                    <div class="bio-content">
+                        <img src="../../assets/Messi.webp" alt="Messi retrato" class="bio-img">
+                        <div class="bio-text">
+                            <p><strong>Lionel Messi</strong> es considerado por muchos como el mejor futbolista de todos los tiempos. Nacido en Rosario, Argentina, llegó al FC Barcelona a los 13 años para tratar su déficit de hormona de crecimiento, convirtiéndose en la mayor joya de La Masía.</p>
+                            <p>Debutó con el primer equipo a los <strong>16 años y 145 días</strong> bajo Frank Rijkaard, convirtiéndose en el jugador más joven en debutar con el Barça en partido oficial. En 2009, con Pep Guardiola, inició una era dorada que incluyó 6 Balones de Oro y el histórico sextete en 2009.</p>
+                            <p>Como máximo goleador e histórico del club (672 goles), lideró al Barça a conquistar <strong>35 títulos</strong> antes de su emotiva salida en 2021. Johan Cruyff lo definió: <em>"Messi es único, un jugador que solo nace cada 50 años"</em>.</p>
+                            <p>En 2022 coronó su leyenda ganando el Mundial con Argentina, completando así todos los títulos posibles en el fútbol.</p>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="player-stats">
+                    <h2>Estadísticas con el Barça (2004-2021)</h2>
+                    <div class="stats-tabs">
+                        <button class="tab-btn active" data-tab="club">Club</button>
+                        <button class="tab-btn" data-tab="national">Selección</button>
+                    </div>
+                    
+                    <div class="stats-content active" id="club-stats">
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <span class="stat-number">778</span>
+                                <span class="stat-label">Partidos</span>
+                            </div>
+                            <div class="stat-card highlight">
+                                <span class="stat-number">672</span>
+                                <span class="stat-label">Goles</span>
+                            </div>
+                            <div class="stat-card highlight">
+                                <span class="stat-number">303</span>
+                                <span class="stat-label">Asistencias</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">91%</span>
+                                <span class="stat-label">Pases acertados</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">5.5</span>
+                                <span class="stat-label">Regates p/j</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">1.8</span>
+                                <span class="stat-label">Goles p/j</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">35</span>
+                                <span class="stat-label">Hat-tricks</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">63.382'</span>
+                                <span class="stat-label">Minutos</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="stats-content" id="national-stats">
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <span class="stat-number">180</span>
+                                <span class="stat-label">Partidos</span>
+                            </div>
+                            <div class="stat-card highlight">
+                                <span class="stat-number">106</span>
+                                <span class="stat-label">Goles</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">56</span>
+                                <span class="stat-label">Asistencias</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">Mundial 2022</span>
+                                <span class="stat-label">Campeón</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">2</span>
+                                <span class="stat-label">Balones de Oro Mundial</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="player-trophies">
+                    <h2>Palmarés</h2>
+                    <div class="trophies-container">
+                        <div class="trophy-category">
+                            <h3>🏆 FC Barcelona</h3>
+                            <ul>
+                                <li>10 Ligas (2004-05, 2005-06, 2008-09, 2009-10, 2010-11, 2012-13, 2014-15, 2015-16, 2017-18, 2018-19)</li>
+                                <li>7 Copas del Rey (2008-09, 2011-12, 2014-15, 2015-16, 2016-17, 2017-18, 2020-21)</li>
+                                <li>8 Supercopas España (2005, 2006, 2009, 2010, 2011, 2013, 2016, 2018)</li>
+                                <li>4 Champions League (2005-06, 2008-09, 2010-11, 2014-15)</li>
+                                <li>3 Supercopas Europa (2009, 2011, 2015)</li>
+                                <li>3 Mundiales de Clubes (2009, 2011, 2015)</li>
+                            </ul>
+                        </div>
+                        <div class="trophy-category">
+                            <h3>🇦🇷 Selección Argentina</h3>
+                            <ul>
+                                <li>1 Copa Mundial (2022)</li>
+                                <li>1 Copa América (2021)</li>
+                                <li>1 Finalissima (2022)</li>
+                                <li>Medalla de Oro Olímpica (2008)</li>
+                            </ul>
+                        </div>
+                        <div class="trophy-category">
+                            <h3>🏅 Distinciones Individuales</h3>
+                            <ul>
+                                <li>8 Balones de Oro (récord absoluto)</li>
+                                <li>6 Botas de Oro (récord absoluto)</li>
+                                <li>Máximo goleador histórico del Barça (672 goles)</li>
+                                <li>Máximo goleador en un año natural (91 goles en 2012)</li>
+                                <li>6 veces Máximo goleador de la Champions</li>
+                                <li>8 veces MVP de LaLiga</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="player-highlights">
+                    <h2>Jugadas Épicas</h2>
+                    <div class="highlight-videos">
+                        <div class="video-card">
+                            <img src="../../assets/player-pages/messicopadelrey.jpg" alt="Messi vs Getafe" class="video-thumbnail">
+                            <div class="video-info">
+                                <h3>Copa del Rey 2007</h3>
+                                <p>El gol más parecido a Maradona vs Inglaterra</p>
+                                <a href="https://www.youtube.com/watch?v=waETo-ZWCRw">
+                                <button class="btn-watch">▶ Ver jugada</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <img src="../../assets/player-pages/messichampions.jpg" alt="Messi vs Real Madrid" class="video-thumbnail">
+                            <div class="video-info">
+                                <h3>Champions 2011</h3>
+                                <p>Doble asistencia en semifinales al Madrid</p>
+                                <a href="https://www.youtube.com/watch?v=q-JCwviZxSA">
+                                <button class="btn-watch">▶ Ver highlights</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <img src="../../assets/player-pages/messibayern2015.jpg" alt="Messi vs Bayern" class="video-thumbnail">
+                            <div class="video-info">
+                                <h3>Champions 2015</h3>
+                                <p>Humillación a Boateng y gol a Neuer</p>
+                                <a href="https://www.youtube.com/watch?v=DkAZW2-3qVI">
+                                <button class="btn-watch">▶ Ver gol</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="player-style">
+                    <h2>Estilo de Juego</h2>
+                    <div class="style-content">
+                        <div class="style-text">
+                            <p>Messi redefinió el concepto de <strong>delantero total</strong> con un estilo único:</p>
+                            <ul>
+                                <li><strong>Regate:</strong> Cambios de ritmo y dribling en espacios mínimos</li>
+                                <li><strong>Visión:</strong> Pases milimétricos y lectura del juego</li>
+                                <li><strong>Definición:</strong> Precisión quirúrgica con ambos pies</li>
+                                <li><strong>Asociación:</strong> Juego colectivo y desmarques inteligentes</li>
+                                <li><strong>Free-kicks:</strong> Ejecución magistral de faltas directas</li>
+                            </ul>
+                            <p>Comparado inicialmente con Maradona por su baja estatura y habilidad, desarrolló un estilo propio caracterizado por su <strong>eficacia numérica</strong> (promedio de 1.2 goles por partido en su mejor época) y capacidad para decidir partidos en momentos clave.</p>
+                        </div>
+                        <div class="style-image">
+                            <div class="style-quote">
+                                <blockquote>"No necesito ser el mejor, solo quiero ser recordado como parte de un equipo que hizo historia"</blockquote>
+                                <cite>- Messi, 2015</cite>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="player-future">
+                    <h2>Legado</h2>
+                    <div class="future-content">
+                        <div class="future-card">
+                            <h3>🏆 Récords</h3>
+                            <ul>
+                                <li>Máximo goleador en un año (91 goles)</li>
+                                <li>Más goles en un club (672 con el Barça)</li>
+                                <li>Más goles en Clásicos (26)</li>
+                                <li>Más hat-tricks en Champions (8)</li>
+                                <li>Más MVP en partidos de LaLiga</li>
+                            </ul>
+                        </div>
+                        <div class="future-card">
+                            <h3>📈 Impacto</h3>
+                            <ul>
+                                <li>Referente para generaciones de futbolistas</li>
+                                <li>Inspiración para niños con problemas de crecimiento</li>
+                                <li>Embajador global del fútbol</li>
+                                <li>Cambió el paradigma del desarrollo físico en el fútbol</li>
+                            </ul>
+                        </div>
+                        <div class="future-card">
+                            <h3>💎 Eterna Leyenda</h3>
+                            <ul>
+                                <li>Considerado el mejor de la historia por muchos</li>
+                                <li>Ídolo en Barcelona, Rosario y Argentina</li>
+                                <li>Estadio y museo en su honor en Newell's</li>
+                                <li>Futuro embajador del FC Barcelona</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    
+        
+        <script>
+            // Funcionalidad de pestañas
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remover clase active de todos los botones y contenidos
+                    document.querySelector('.tab-btn.active').classList.remove('active');
+                    document.querySelector('.stats-content.active').classList.remove('active');
+                    
+                    // Añadir clase active al botón clickeado
+                    btn.classList.add('active');
+                    
+                    // Mostrar el contenido correspondiente
+                    const tabId = btn.getAttribute('data-tab');
+                    document.getElementById(`${tabId}-stats`).classList.add('active');
+                });
+            });
+            
+            // Efecto especial para el banner
+            const banner = document.querySelector('.player-banner');
+            if(banner) {
+                banner.addEventListener('mousemove', (e) => {
+                    const x = e.clientX / window.innerWidth;
+                    const y = e.clientY / window.innerHeight;
+                    banner.style.transform = `perspective(1000px) rotateX(${(y - 0.5) * 5}deg) rotateY(${(x - 0.5) * 5}deg)`;
+                });
+                
+                banner.addEventListener('mouseleave', () => {
+                    banner.style.transform = 'perspective(1000px) rotateX(0) rotateY(0)';
+                });
+            }
+        </script>
+    </main>
+
+    <footer id="mainFooter">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Porteros</h3>
+                <p><a href="../players/ter-stegen.html">Ter Stegen</a></p>
+                <p><a href="../players/szczesny.html">Szczęsny</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Defensas</h3>
+                <p><a href="../players/araujo.html">Araújo</a></p>
+                <p><a href="../players/kounde.html">Koundé</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Centrocampistas</h3>
+                <p><a href="../players/pedri.html">Pedri</a></p>
+                <p><a href="../players/gavi.html">Gavi</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Delanteros</h3>
+                <p><a href="../players/lewandowski.html">Lewandowski</a></p>
+                <p><a href="../players/yamal.html">Yamal</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociales</h3>
+                <p><a href="https://www.fcbarcelona.es/es/">Pagina Oficial</a></p>
+                <p><a href="https://www.instagram.com/fcbarcelona/">Instagram</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Club</h3>
+                <p><a href="../stadium.html">Estadio</a></p>
+                <p><a href="../history.html">Historia</a></p>
+            </div>
+        </div>
+    </footer>
+
+<script src="../../scripts/site.js" defer></script>
+</body>
+</html>

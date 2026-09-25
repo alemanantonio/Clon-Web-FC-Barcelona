@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web del FC Barcelona</title>
+    <link rel="icon" href="../assets/fc-barcelona.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/pages/standings.css">
+</head>
+<body>
+    <header id="mainHeader">
+        <div class="header-content">
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <nav id="mainNav">
+                <div class="nav-item">
+                    Primer Equipo
+                    <div class="dropdown">
+                        <a href="players.html">Jugadores</a>
+                        <a href="tickets.html">Entradas</a>
+                        <a href="standings.html">Clasificacion</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    Noticias 
+                    <div class="dropdown">
+                        <a href="latest-news.html">Últimas Noticias</a>
+                        <a href="upcoming-matches.html">Próximos Partidos</a>
+                        <a href="results.html">Resultados</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    Historia
+                    <div class="dropdown">
+                        <a href="history.html">Historia del Club</a>
+                        <a href="trophies.html">Títulos</a>
+                        <a href="stadium.html">Estadio</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    Más Equipos
+                    <div class="dropdown">
+                        <a href="women.html">Femenino</a>
+                        <a href="basketball.html">Baloncesto</a>
+                        <a href="barca-atletic.html">Barca Atletic</a>
+                    </div>
+                </div>   
+            </nav>
+            
+            <div class="logo-container">
+                <a href="../index.html">   
+                <img class="logo" src="../assets/fc-barcelona.svg" alt="Logo del FC Barcelona">
+                </a>
+            </div>
+
+            <div class="header-right-container">
+                <div class="header-right">
+                    <a href="membership.html" class="cta-button cta-button--gold">Hazte Socio</a>
+                    <a href="tickets.html" class="cta-button cta-button--ghost">Entradas</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="standings-section">
+            <h1>Clasificaciones FC Barcelona</h1>
+            
+            <div class="competition-tabs">
+                <button class="tab-btn active" data-tab="laliga">LaLiga</button>
+                <button class="tab-btn" data-tab="champions">Champions</button>
+                <button class="tab-btn" data-tab="copa">Copa del Rey</button>
+            </div>
+            
+            <!-- Pestaña LaLiga -->
+            <div class="tab-content active" id="laliga-tab">
+                <h2>Clasificación LaLiga EA Sports 2024/25</h2>
+                <div class="last-update">Actualizado: 16/04/2025</div>
+            
+                <div class="standings-table">
+                    <div class="table-header">
+                        <div class="pos">#</div>
+                        <div class="team">Equipo</div>
+                        <div class="stats">PJ</div>
+                        <div class="stats">G</div>
+                        <div class="stats">E</div>
+                        <div class="stats">P</div>
+                        <div class="stats">GF</div>
+                        <div class="stats">GC</div>
+                        <div class="stats">DG</div>
+                        <div class="stats pts">PTS</div>
+                    </div>
+            
+                    <div class="table-row barca">
+                        <div class="pos">1</div>
+                        <div class="team">
+                            <img src="../assets/standings/fc-barcelona.svg" alt="FC Barcelona">
+                            <span>FC Barcelona</span>
+                        </div>
+                        <div class="stats">31</div>
+                        <div class="stats">22</div>
+                        <div class="stats">4</div>
+                        <div class="stats">5</div>
+                        <div class="stats">84</div>
+                        <div class="stats">29</div>
+                        <div class="stats">+55</div>
+                        <div class="stats pts">70</div>
+                    </div>
+            
+                    <div class="table-row">
+                        <div class="pos">2</div>
+                        <div class="team">
+                            <img src="../assets/standings/RealMadrid.png" alt="Real Madrid">
+                            <span>Real Madrid</span>
+                        </div>
+                        <div class="stats">31</div>
+                        <div class="stats">20</div>
+                        <div class="stats">6</div>
+                        <div class="stats">5</div>
+                        <div class="stats">64</div>
+                        <div class="stats">31</div>
+                        <div class="stats">+33</div>
+                        <div class="stats pts">66</div>
+                    </div>
+            
+                    <div class="table-row">
+                        <div class="pos">3</div>
+                        <div class="team">
+                            <img src="../assets/standings/Atletico-Madrid-Logo.png" alt="Atlético Madrid">
+                            <span>Atlético Madrid</span>
+                        </div>
+                        <div class="stats">31</div>
+                        <div class="stats">18</div>
+                        <div class="stats">9</div>
+                        <div class="stats">4</div>
+                        <div class="stats">53</div>
+                        <div class="stats">26</div>
+                        <div class="stats">+27</div>
+                        <div class="stats pts">63</div>
+                    </div>
+            
+                    <div class="table-row">
+                        <div class="pos">4</div>
+                        <div class="team">
+                            <img src="../assets/standings/athletic.png" alt="Athletic Bilbao">
+                            <span>Athletic Bilbao</span>
+                        </div>
+                        <div class="stats">31</div>
+                        <div class="stats">15</div>
+                        <div class="stats">12</div>
+                        <div class="stats">4</div>
+                        <div class="stats">49</div>
+                        <div class="stats">25</div>
+                        <div class="stats">+24</div>
+                        <div class="stats pts">57</div>
+                    </div>
+            
+                    <div class="table-row">
+                        <div class="pos">5</div>
+                        <div class="team">
+                            <img src="../assets/standings/villarreal.png" alt="Villarreal">
+                            <span>Villarreal CF</span>
+                        </div>
+                        <div class="stats">30</div>
+                        <div class="stats">14</div>
+                        <div class="stats">9</div>
+                        <div class="stats">7</div>
+                        <div class="stats">53</div>
+                        <div class="stats">40</div>
+                        <div class="stats">+13</div>
+                        <div class="stats pts">51</div>
+                    </div>
+            
+                    <div class="table-row">
+                        <div class="pos">6</div>
+                        <div class="team">
+                            <img src="../assets/standings/betis.png" alt="Real Betis">
+                            <span>Real Betis</span>
+                        </div>
+                        <div class="stats">31</div>
+                        <div class="stats">13</div>
+                        <div class="stats">9</div>
+                        <div class="stats">9</div>
+                        <div class="stats">42</div>
+                        <div class="stats">39</div>
+                        <div class="stats">+3</div>
+                        <div class="stats pts">48</div>
+                    </div>
+            
+                    <div class="table-row">
+                        <div class="pos">7</div>
+                        <div class="team">
+                            <img src="../assets/standings/celta.png" alt="Celta de Vigo">
+                            <span>Celta de Vigo</span>
+                        </div>
+                        <div class="stats">31</div>
+                        <div class="stats">12</div>
+                        <div class="stats">7</div>
+                        <div class="stats">12</div>
+                        <div class="stats">44</div>
+                        <div class="stats">45</div>
+                        <div class="stats">-1</div>
+                        <div class="stats pts">43</div>
+                    </div>
+            
+                    <div class="table-row">
+                        <div class="pos">8</div>
+                        <div class="team">
+                            <img src="../assets/standings/mallorca.png" alt="RCD Mallorca">
+                            <span>RCD Mallorca</span>
+                        </div>
+                        <div class="stats">31</div>
+                        <div class="stats">12</div>
+                        <div class="stats">7</div>
+                        <div class="stats">12</div>
+                        <div class="stats">31</div>
+                        <div class="stats">37</div>
+                        <div class="stats">-6</div>
+                        <div class="stats pts">43</div>
+                    </div>
+            
+                    <div class="table-row">
+                        <div class="pos">9</div>
+                        <div class="team">
+                            <img src="../assets/standings/realsociedad.png" alt="Real Sociedad">
+                            <span>Real Sociedad</span>
+                        </div>
+                        <div class="stats">31</div>
+                        <div class="stats">12</div>
+                        <div class="stats">5</div>
+                        <div class="stats">14</div>
+                        <div class="stats">30</div>
+                        <div class="stats">34</div>
+                        <div class="stats">-4</div>
+                        <div class="stats pts">41</div>
+                    </div>
+            
+                    <div class="table-row">
+                        <div class="pos">10</div>
+                        <div class="team">
+                            <img src="../assets/standings/rayovallecano.png" alt="Rayo Vallecano">
+                            <span>Rayo Vallecano</span>
+                        </div>
+                        <div class="stats">31</div>
+                        <div class="stats">10</div>
+                        <div class="stats">10</div>
+                        <div class="stats">11</div>
+                        <div class="stats">34</div>
+                        <div class="stats">38</div>
+                        <div class="stats">-4</div>
+                        <div class="stats pts">40</div>
+                    </div>
+            
+                    <div class="table-row">
+                        <div class="pos">11</div>
+                        <div class="team">
+                            <img src="../assets/standings/getafe.png" alt="Getafe CF">
+                            <span>Getafe CF</span>
+                        </div>
+                        <div class="stats">31</div>
+                        <div class="stats">10</div>
+                        <div class="stats">9</div>
+                        <div class="stats">12</div>
+                        <div class="stats">31</div>
+                        <div class="stats">28</div>
+                        <div class="stats">+3</div>
+                        <div class="stats pts">39</div>
+                    </div>
+            
+                    <div class="table-row">
+                        <div class="pos">12</div>
+                        <div class="team">
+                            <img src="../assets/standings/osasuna.png" alt="Osasuna">
+                            <span>CA Osasuna</span>
+                        </div>
+                        <div class="stats">31</div>
+                        <div class="stats">8</div>
+                        <div class="stats">14</div>
+                        <div class="stats">9</div>
+                        <div class="stats">36</div>
+                        <div class="stats">44</div>
+                        <div class="stats">-8</div>
+                        <div class="stats pts">38</div>
+                    </div>
+            
+                    <div class="table-row">
+                        <div class="pos">13</div>
+                        <div class="team">
+                            <img src="../assets/standings/valencia.png" alt="Valencia CF">
+                            <span>Valencia CF</span>
+                        </div>
+                        <div class="stats">31</div>
+                        <div class="stats">9</div>
+                        <div class="stats">10</div>
+                        <div class="stats">12</div>
+                        <div class="stats">35</div>
+                        <div class="stats">47</div>
+                        <div class="stats">-12</div>
+                        <div class="stats pts">37</div>
+                    </div>
+            
+                    <div class="table-row">
+                        <div class="pos">14</div>
+                        <div class="team">
+                            <img src="../assets/standings/sevilla.png" alt="Sevilla FC">
+                            <span>Sevilla FC</span>
+                        </div>
+                        <div class="stats">31</div>
+                        <div class="stats">9</div>
+                        <div class="stats">9</div>
+                        <div class="stats">13</div>
+                        <div class="stats">34</div>
+                        <div class="stats">42</div>
+                        <div class="stats">-8</div>
+                        <div class="stats pts">36</div>
+                    </div>
+            
+                    <div class="table-row">
+                        <div class="pos">15</div>
+                        <div class="team">
+                            <img src="../assets/standings/espanyol.png" alt="RCD Espanyol">
+                            <span>RCD Espanyol</span>
+                        </div>
+                        <div class="stats">30</div>
+                        <div class="stats">9</div>
+                        <div class="stats">8</div>
+                        <div class="stats">13</div>
+                        <div class="stats">33</div>
+                        <div class="stats">40</div>
+                        <div class="stats">-7</div>
+                        <div class="stats pts">35</div>
+                    </div>
+            
+                    <div class="table-row">
+                        <div class="pos">16</div>
+                        <div class="team">
+                            <img src="../assets/standings/girona.png" alt="Girona FC">
+                            <span>Girona FC</span>
+                        </div>
+                        <div class="stats">31</div>
+                        <div class="stats">9</div>
+                        <div class="stats">7</div>
+                        <div class="stats">15</div>
+                        <div class="stats">38</div>
+                        <div class="stats">48</div>
+                        <div class="stats">-10</div>
+                        <div class="stats pts">34</div>
+                    </div>
+            
+                    <div class="table-row">
+                        <div class="pos">17</div>
+                        <div class="team">
+                            <img src="../assets/standings/alaves.png" alt="Deportivo Alavés">
+                            <span>Deportivo Alavés</span>
+                        </div>
+                        <div class="stats">31</div>
+                        <div class="stats">7</div>
+                        <div class="stats">9</div>
+                        <div class="stats">15</div>
+                        <div class="stats">33</div>
+                        <div class="stats">45</div>
+                        <div class="stats">-12</div>
+                        <div class="stats pts">30</div>
+                    </div>
+            
+                    <div class="table-row">
+                        <div class="pos">18</div>
+                        <div class="team">
+                            <img src="../assets/standings/udlaspalmas.png" alt="UD Las Palmas">
+                            <span>UD Las Palmas</span>
+                        </div>
+                        <div class="stats">31</div>
+                        <div class="stats">7</div>
+                        <div class="stats">8</div>
+                        <div class="stats">16</div>
+                        <div class="stats">37</div>
+                        <div class="stats">52</div>
+                        <div class="stats">-15</div>
+                        <div class="stats pts">29</div>
+                    </div>
+            
+                    <div class="table-row">
+                        <div class="pos">19</div>
+                        <div class="team">
+                            <img src="../assets/standings/leganes.png" alt="CD Leganés">
+                            <span>CD Leganés</span>
+                        </div>
+                        <div class="stats">31</div>
+                        <div class="stats">6</div>
+                        <div class="stats">10</div>
+                        <div class="stats">15</div>
+                        <div class="stats">29</div>
+                        <div class="stats">48</div>
+                        <div class="stats">-19</div>
+                        <div class="stats pts">28</div>
+                    </div>
+            
+                    <div class="table-row">
+                        <div class="pos">20</div>
+                        <div class="team">
+                            <img src="../assets/standings/valladolid.png" alt="Real Valladolid">
+                            <span>Real Valladolid</span>
+                        </div>
+                        <div class="stats">31</div>
+                        <div class="stats">4</div>
+                        <div class="stats">4</div>
+                        <div class="stats">23</div>
+                        <div class="stats">21</div>
+                        <div class="stats">73</div>
+                        <div class="stats">-52</div>
+                        <div class="stats pts">16</div>
+                    </div>
+            
+                    <div class="next-match">
+                        <h3>Próximo Partido</h3>
+                        <div class="match-info">
+                            <div class="team">
+                                <img src="../assets/standings/celta.png" alt="Celta de Vigo">
+                                <span>Celta de Vigo</span>
+                            </div>
+                            <div class="vs">VS</div>
+                            <div class="team">
+                                <img src="../assets/standings/fc-barcelona.svg" alt="FC Barcelona">
+                                <span>FC Barcelona</span>
+                            </div>
+                        </div>
+                        <div class="match-details">
+                            <p><strong>Fecha:</strong> 19/04/2025 - 8:15 A.M</p>
+                            <p><strong>Estadio:</strong> Spotify Camp Nou</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    
+                
+                
+                
+                
+            
+            
+            <!-- Pestaña Champions League -->
+            <div class="tab-content" id="champions-tab">
+                <h2>UEFA Champions League - Fase de Grupos</h2>
+                <div class="last-update">Actualizado: 16/04/2025</div>
+                
+                <div class="standings-table">
+                    <div class="table-header">
+                        <div class="pos">#</div>
+                        <div class="team">Equipo</div>
+                        <div class="stats">PJ</div>
+                        <div class="stats">G</div>
+                        <div class="stats">E</div>
+                        <div class="stats">P</div>
+                        <div class="stats">GF</div>
+                        <div class="stats">GC</div>
+                        <div class="stats">DG</div>
+                        <div class="stats pts">PTS</div>
+                    </div>
+                    
+                    <!-- Top 15 from provided image -->
+                    <div class="table-row">
+                        <div class="pos">1</div>
+                        <div class="team">
+                            <img src="../assets/standings/liverpool.png" alt="Liverpool">
+                            <span>Liverpool</span>
+                        </div>
+                        <div class="stats">8</div>
+                        <div class="stats">7</div>
+                        <div class="stats">0</div>
+                        <div class="stats">1</div>
+                        <div class="stats">17</div>
+                        <div class="stats">5</div>
+                        <div class="stats">+12</div>
+                        <div class="stats pts">21</div>
+                    </div>
+                    
+                    <div class="table-row barca">
+                        <div class="pos">2</div>
+                        <div class="team">
+                            <img src="../assets/standings/fc-barcelona.svg" alt="FC Barcelona">
+                            <span>FC Barcelona</span>
+                        </div>
+                        <div class="stats">8</div>
+                        <div class="stats">6</div>
+                        <div class="stats">1</div>
+                        <div class="stats">1</div>
+                        <div class="stats">28</div>
+                        <div class="stats">13</div>
+                        <div class="stats">+15</div>
+                        <div class="stats pts">19</div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="pos">3</div>
+                        <div class="team">
+                            <img src="../assets/standings/arsenal.png" alt="Arsenal">
+                            <span>Arsenal</span>
+                        </div>
+                        <div class="stats">8</div>
+                        <div class="stats">6</div>
+                        <div class="stats">1</div>
+                        <div class="stats">1</div>
+                        <div class="stats">16</div>
+                        <div class="stats">3</div>
+                        <div class="stats">+13</div>
+                        <div class="stats pts">19</div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="pos">4</div>
+                        <div class="team">
+                            <img src="../assets/standings/inter.png" alt="Inter Milan">
+                            <span>Inter</span>
+                        </div>
+                        <div class="stats">8</div>
+                        <div class="stats">6</div>
+                        <div class="stats">1</div>
+                        <div class="stats">1</div>
+                        <div class="stats">11</div>
+                        <div class="stats">1</div>
+                        <div class="stats">+10</div>
+                        <div class="stats pts">19</div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="pos">5</div>
+                        <div class="team">
+                            <img src="../assets/standings/Atletico-Madrid-Logo.png" alt="Atlético Madrid">
+                            <span>Atlético Madrid</span>
+                        </div>
+                        <div class="stats">8</div>
+                        <div class="stats">6</div>
+                        <div class="stats">0</div>
+                        <div class="stats">2</div>
+                        <div class="stats">20</div>
+                        <div class="stats">12</div>
+                        <div class="stats">+8</div>
+                        <div class="stats pts">18</div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="pos">6</div>
+                        <div class="team">
+                            <img src="../assets/standings/bayerleverkusen.png" alt="Bayer Leverkusen">
+                            <span>Leverkusen</span>
+                        </div>
+                        <div class="stats">8</div>
+                        <div class="stats">5</div>
+                        <div class="stats">1</div>
+                        <div class="stats">2</div>
+                        <div class="stats">15</div>
+                        <div class="stats">7</div>
+                        <div class="stats">+8</div>
+                        <div class="stats pts">16</div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="pos">7</div>
+                        <div class="team">
+                            <img src="../assets/standings/lille.png" alt="Lille OSC">
+                            <span>LOSC</span>
+                        </div>
+                        <div class="stats">8</div>
+                        <div class="stats">5</div>
+                        <div class="stats">1</div>
+                        <div class="stats">2</div>
+                        <div class="stats">17</div>
+                        <div class="stats">10</div>
+                        <div class="stats">+7</div>
+                        <div class="stats pts">16</div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="pos">8</div>
+                        <div class="team">
+                            <img src="../assets/standings/astonvilla.png" alt="Aston Villa">
+                            <span>Aston Villa</span>
+                        </div>
+                        <div class="stats">8</div>
+                        <div class="stats">5</div>
+                        <div class="stats">1</div>
+                        <div class="stats">2</div>
+                        <div class="stats">13</div>
+                        <div class="stats">6</div>
+                        <div class="stats">+7</div>
+                        <div class="stats pts">16</div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="pos">9</div>
+                        <div class="team">
+                            <img src="../assets/standings/atalanta.png" alt="Atalanta">
+                            <span>Atalanta</span>
+                        </div>
+                        <div class="stats">8</div>
+                        <div class="stats">4</div>
+                        <div class="stats">3</div>
+                        <div class="stats">1</div>
+                        <div class="stats">20</div>
+                        <div class="stats">6</div>
+                        <div class="stats">+14</div>
+                        <div class="stats pts">15</div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="pos">10</div>
+                        <div class="team">
+                            <img src="../assets/standings/borussiadortmund.png" alt="Borussia Dortmund">
+                            <span>Dortmund</span>
+                        </div>
+                        <div class="stats">8</div>
+                        <div class="stats">5</div>
+                        <div class="stats">0</div>
+                        <div class="stats">3</div>
+                        <div class="stats">22</div>
+                        <div class="stats">12</div>
+                        <div class="stats">+10</div>
+                        <div class="stats pts">15</div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="pos">11</div>
+                        <div class="team">
+                            <img src="../assets/standings/RealMadrid.png" alt="Real Madrid">
+                            <span>Real Madrid</span>
+                        </div>
+                        <div class="stats">8</div>
+                        <div class="stats">5</div>
+                        <div class="stats">0</div>
+                        <div class="stats">3</div>
+                        <div class="stats">20</div>
+                        <div class="stats">12</div>
+                        <div class="stats">+8</div>
+                        <div class="stats pts">15</div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="pos">12</div>
+                        <div class="team">
+                            <img src="../assets/standings/bayernmunchen.png" alt="Bayern Munich">
+                            <span>Bayern</span>
+                        </div>
+                        <div class="stats">8</div>
+                        <div class="stats">5</div>
+                        <div class="stats">0</div>
+                        <div class="stats">3</div>
+                        <div class="stats">20</div>
+                        <div class="stats">12</div>
+                        <div class="stats">+8</div>
+                        <div class="stats pts">15</div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="pos">13</div>
+                        <div class="team">
+                            <img src="../assets/standings/milan.png" alt="AC Milan">
+                            <span>Milan</span>
+                        </div>
+                        <div class="stats">8</div>
+                        <div class="stats">5</div>
+                        <div class="stats">0</div>
+                        <div class="stats">3</div>
+                        <div class="stats">14</div>
+                        <div class="stats">11</div>
+                        <div class="stats">+3</div>
+                        <div class="stats pts">15</div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="pos">14</div>
+                        <div class="team">
+                            <img src="../assets/standings/psv.png" alt="PSV Eindhoven">
+                            <span>PSV</span>
+                        </div>
+                        <div class="stats">8</div>
+                        <div class="stats">4</div>
+                        <div class="stats">2</div>
+                        <div class="stats">2</div>
+                        <div class="stats">16</div>
+                        <div class="stats">12</div>
+                        <div class="stats">+4</div>
+                        <div class="stats pts">14</div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="pos">15</div>
+                        <div class="team">
+                            <img src="../assets/standings/psg.png" alt="Paris Saint-Germain">
+                            <span>PSG</span>
+                        </div>
+                        <div class="stats">8</div>
+                        <div class="stats">4</div>
+                        <div class="stats">1</div>
+                        <div class="stats">3</div>
+                        <div class="stats">14</div>
+                        <div class="stats">9</div>
+                        <div class="stats">+5</div>
+                        <div class="stats pts">13</div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="pos">16</div>
+                        <div class="team">
+                            <img src="../assets/standings/benfica.png" alt="Benfica">
+                            <span>Benfica</span>
+                        </div>
+                        <div class="stats">8</div>
+                        <div class="stats">4</div>
+                        <div class="stats">1</div>
+                        <div class="stats">3</div>
+                        <div class="stats">12</div>
+                        <div class="stats">10</div>
+                        <div class="stats">+2</div>
+                        <div class="stats pts">13</div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="pos">17</div>
+                        <div class="team">
+                            <img src="../assets/standings/monaco.png" alt="Monaco">
+                            <span>Monaco</span>
+                        </div>
+                        <div class="stats">8</div>
+                        <div class="stats">4</div>
+                        <div class="stats">1</div>
+                        <div class="stats">3</div>
+                        <div class="stats">15</div>
+                        <div class="stats">14</div>
+                        <div class="stats">+1</div>
+                        <div class="stats pts">13</div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="pos">18</div>
+                        <div class="team">
+                            <img src="../assets/standings/stadebretois.png" alt="Stade">
+                            <span>Stade Brestois</span>
+                        </div>
+                        <div class="stats">8</div>
+                        <div class="stats">4</div>
+                        <div class="stats">1</div>
+                        <div class="stats">3</div>
+                        <div class="stats">11</div>
+                        <div class="stats">12</div>
+                        <div class="stats">-1</div>
+                        <div class="stats pts">13</div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="pos">19</div>
+                        <div class="team">
+                            <img src="../assets/standings/feyenoord.png" alt="Feyenoord">
+                            <span>Feyenoord</span>
+                        </div>
+                        <div class="stats">8</div>
+                        <div class="stats">4</div>
+                        <div class="stats">0</div>
+                        <div class="stats">4</div>
+                        <div class="stats">18</div>
+                        <div class="stats">15</div>
+                        <div class="stats">+3</div>
+                        <div class="stats pts">12</div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="pos">20</div>
+                        <div class="team">
+                            <img src="../assets/standings/juventus.png" alt="Juventus">
+                            <span>Juventus</span>
+                        </div>
+                        <div class="stats">8</div>
+                        <div class="stats">4</div>
+                        <div class="stats">0</div>
+                        <div class="stats">4</div>
+                        <div class="stats">16</div>
+                        <div class="stats">14</div>
+                        <div class="stats">+2</div>
+                        <div class="stats pts">12</div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="pos">21</div>
+                        <div class="team">
+                            <img src="../assets/standings/celtic.png" alt="Celtic">
+                            <span>Celtic</span>
+                        </div>
+                        <div class="stats">8</div>
+                        <div class="stats">4</div>
+                        <div class="stats">0</div>
+                        <div class="stats">4</div>
+                        <div class="stats">14</div>
+                        <div class="stats">13</div>
+                        <div class="stats">+1</div>
+                        <div class="stats pts">12</div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="pos">22</div>
+                        <div class="team">
+                            <img src="../assets/standings/manchestercity.png" alt="City">
+                            <span>Manchester City</span>
+                        </div>
+                        <div class="stats">8</div>
+                        <div class="stats">3</div>
+                        <div class="stats">2</div>
+                        <div class="stats">3</div>
+                        <div class="stats">12</div>
+                        <div class="stats">11</div>
+                        <div class="stats">+1</div>
+                        <div class="stats pts">11</div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="pos">23</div>
+                        <div class="team">
+                            <img src="../assets/standings/sporting.png" alt="lisboa">
+                            <span>Sporting Lisboa</span>
+                        </div>
+                        <div class="stats">8</div>
+                        <div class="stats">3</div>
+                        <div class="stats">2</div>
+                        <div class="stats">3</div>
+                        <div class="stats">10</div>
+                        <div class="stats">10</div>
+                        <div class="stats">0</div>
+                        <div class="stats pts">11</div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="pos">24</div>
+                        <div class="team">
+                            <img src="../assets/standings/clubbrujas.png" alt="brujas">
+                            <span>Brujas</span>
+                        </div>
+                        <div class="stats">8</div>
+                        <div class="stats">3</div>
+                        <div class="stats">2</div>
+                        <div class="stats">3</div>
+                        <div class="stats">15</div>
+                        <div class="stats">16</div>
+                        <div class="stats">-1</div>
+                        <div class="stats pts">11</div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="pos">25</div>
+                        <div class="team">
+                            <img src="../assets/standings/dinamo_zagreb.png" alt="Zagreb">
+                            <span>Dinamo Zagreb</span>
+                        </div>
+                        <div class="stats">8</div>
+                        <div class="stats">3</div>
+                        <div class="stats">1</div>
+                        <div class="stats">4</div>
+                        <div class="stats">14</div>
+                        <div class="stats">15</div>
+                        <div class="stats">-1</div>
+                        <div class="stats pts">10</div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="pos">26</div>
+                        <div class="team">
+                            <img src="../assets/standings/stuttgart.png" alt="Stutgart">
+                            <span>Stuttgart</span>
+                        </div>
+                        <div class="stats">8</div>
+                        <div class="stats">3</div>
+                        <div class="stats">1</div>
+                        <div class="stats">4</div>
+                        <div class="stats">12</div>
+                        <div class="stats">14</div>
+                        <div class="stats">-2</div>
+                        <div class="stats pts">10</div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="pos">27</div>
+                        <div class="team">
+                            <img src="../assets/standings/shakhtar_donetsk.png" alt="Shaktar">
+                            <span>Shaktar</span>
+                        </div>
+                        <div class="stats">8</div>
+                        <div class="stats">3</div>
+                        <div class="stats">1</div>
+                        <div class="stats">4</div>
+                        <div class="stats">10</div>
+                        <div class="stats">13</div>
+                        <div class="stats">-3</div>
+                        <div class="stats pts">10</div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="pos">28</div>
+                        <div class="team">
+                            <img src="../assets/standings/bologna.png" alt="Bolonia">
+                            <span>Bolonia</span>
+                        </div>
+                        <div class="stats">8</div>
+                        <div class="stats">2</div>
+                        <div class="stats">3</div>
+                        <div class="stats">3</div>
+                        <div class="stats">9</div>
+                        <div class="stats">12</div>
+                        <div class="stats">-3</div>
+                        <div class="stats pts">9</div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="pos">29</div>
+                        <div class="team">
+                            <img src="../assets/standings/estrella_roja.png" alt="Estrella Roja">
+                            <span>Estrella Roja</span>
+                        </div>
+                        <div class="stats">8</div>
+                        <div class="stats">2</div>
+                        <div class="stats">2</div>
+                        <div class="stats">4</div>
+                        <div class="stats">8</div>
+                        <div class="stats">12</div>
+                        <div class="stats">-4</div>
+                        <div class="stats pts">8</div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="pos">30</div>
+                        <div class="team">
+                            <img src="../assets/standings/sturm_graz.png" alt="Strum">
+                            <span>Strum</span>
+                        </div>
+                        <div class="stats">8</div>
+                        <div class="stats">2</div>
+                        <div class="stats">2</div>
+                        <div class="stats">4</div>
+                        <div class="stats">7</div>
+                        <div class="stats">12</div>
+                        <div class="stats">-5</div>
+                        <div class="stats pts">8</div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="pos">31</div>
+                        <div class="team">
+                            <img src="../assets/standings/sparta_praga.png" alt="Sparta">
+                            <span>Sparta Praha</span>
+                        </div>
+                        <div class="stats">8</div>
+                        <div class="stats">2</div>
+                        <div class="stats">1</div>
+                        <div class="stats">5</div>
+                        <div class="stats">9</div>
+                        <div class="stats">16</div>
+                        <div class="stats">-7</div>
+                        <div class="stats pts">7</div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="pos">32</div>
+                        <div class="team">
+                            <img src="../assets/standings/rbleipzig.png" alt="Leipzig">
+                            <span>RB Leipzig</span>
+                        </div>
+                        <div class="stats">8</div>
+                        <div class="stats">1</div>
+                        <div class="stats">3</div>
+                        <div class="stats">4</div>
+                        <div class="stats">7</div>
+                        <div class="stats">15</div>
+                        <div class="stats">-8</div>
+                        <div class="stats pts">6</div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="pos">33</div>
+                        <div class="team">
+                            <img src="../assets/standings/girona.png" alt="Girona">
+                            <span>Girona</span>
+                        </div>
+                        <div class="stats">8</div>
+                        <div class="stats">1</div>
+                        <div class="stats">2</div>
+                        <div class="stats">5</div>
+                        <div class="stats">5</div>
+                        <div class="stats">14</div>
+                        <div class="stats">-9</div>
+                        <div class="stats pts">5</div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="pos">34</div>
+                        <div class="team">
+                            <img src="../assets/standings/red_bull_salzburgo.png" alt="Salzburg">
+                            <span>RB Salzburg</span>
+                        </div>
+                        <div class="stats">8</div>
+                        <div class="stats">1</div>
+                        <div class="stats">1</div>
+                        <div class="stats">6</div>
+                        <div class="stats">4</div>
+                        <div class="stats">18</div>
+                        <div class="stats">-14</div>
+                        <div class="stats pts">3</div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="pos">35</div>
+                        <div class="team">
+                            <img src="../assets/standings/slovan_bratislava.png" alt="ŠK Slovan Bratislava">
+                            <span>ŠK Slovan Bratislava</span>
+                        </div>
+                        <div class="stats">8</div>
+                        <div class="stats">0</div>
+                        <div class="stats">2</div>
+                        <div class="stats">6</div>
+                        <div class="stats">3</div>
+                        <div class="stats">19</div>
+                        <div class="stats">-16</div>
+                        <div class="stats pts">0</div>
+                    </div>
+                    
+                    <div class="table-row">
+                        <div class="pos">36</div>
+                        <div class="team">
+                            <img src="../assets/standings/young_boys.png" alt="young">
+                            <span>Young Boys</span>
+                        </div>
+                        <div class="stats">8</div>
+                        <div class="stats">0</div>
+                        <div class="stats">1</div>
+                        <div class="stats">7</div>
+                        <div class="stats">2</div>
+                        <div class="stats">22</div>
+                        <div class="stats">-20</div>
+                        <div class="stats pts">0</div>
+                    </div>
+                </div>
+                
+                <div class="next-match">
+                    <h3>Próximo Partido - Semifinales</h3>
+                    <div class="match-info">
+                        <div class="team">
+                            <img src="../assets/standings/fc-barcelona.svg" alt="FC Barcelona">
+                            <span>FC Barcelona</span>
+                        </div>
+                        <div class="vs">VS</div>
+                        <div class="team">
+                            <span>Rival Desconocido</span>
+                        </div>
+                    </div>
+                    <div class="match-details">
+                        <p><strong>Fecha:</strong> Por determinar</p>
+                        <p><strong>Estadio:</strong> Spotify Camp Nou</p>
+                        <p><strong>Hora:</strong> Por determinar</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pestaña Copa del Rey -->
+            <div class="tab-content" id="copa-tab">
+                <h2>Copa del Rey 2024/25</h2>
+                <div class="last-update">Actualizado: 16/04/2025</div>
+                
+                <div class="copa-bracket">
+                    <div class="final-match">
+                        <h3>Final</h3>
+                        <div class="match-teams">
+                            <div class="team winner">
+                                <img src="../assets/standings/fc-barcelona.svg" alt="FC Barcelona">
+                                <span>FC Barcelona</span>
+                            </div>
+                            <div class="score">0 - 0</div>
+                            <div class="team">
+                                <img src="../assets/standings/RealMadrid.png" alt="Real Madrid">
+                                <span>Real Madrid</span>
+                            </div>
+                        </div>
+                        <div class="match-details">
+                            <p><strong>Fecha:</strong> 26/04/2025</p>
+                            <p><strong>Estadio:</strong> La Cartuja, Sevilla</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="top-scorers">
+                    <h3>Goleadores del Barça en Copa del Rey</h3>
+                    <div class="scorers-table">
+                        <div class="scorer-row">
+                            <div class="player">
+                                <img src="../assets/standings/fc-barcelona.svg" alt="messi">
+                                <span>1. Lionel Messi (56 goles)</span>
+                            </div>
+                        </div>
+                        <div class="scorer-row">
+                            <div class="player">
+                                <img src="../assets/standings/fc-barcelona.svg" alt="cesar">
+                                <span>2. César Rodríguez (36 goles)</span>
+                            </div>
+                        </div>
+                        <div class="scorer-row">
+                            <div class="player">
+                                <img src="../assets/standings/fc-barcelona.svg" alt="suarez">
+                                <span>3. Luis Suárez (19 goles)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    
+        <script>
+            // Funcionalidad de pestañas
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remover clase active de todos los botones y contenidos
+                    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                    
+                    // Añadir active al botón clickeado
+                    btn.classList.add('active');
+                    
+                    // Mostrar el contenido correspondiente
+                    const tabId = btn.dataset.tab + '-tab';
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+            
+            // Simular actualización periódica (en un caso real se conectaría a una API)
+            function simulateLiveUpdate() {
+                const now = new Date();
+                document.querySelectorAll('.last-update').forEach(el => {
+                    el.textContent = `Actualizado: ${now.toLocaleDateString()} ${now.toLocaleTimeString().substring(0,5)}`;
+                });
+            }
+            
+            // Actualizar cada minuto (simulación)
+            setInterval(simulateLiveUpdate, 60000);
+        </script>
+    </main>
+
+    <footer id="mainFooter">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Porteros</h3>
+                <p><a href="players/ter-stegen.html">Ter Stegen</a></p>
+                <p><a href="players/szczesny.html">Szczęsny</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Defensas</h3>
+                <p><a href="players/araujo.html">Araújo</a></p>
+                <p><a href="players/kounde.html">Koundé</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Centrocampistas</h3>
+                <p><a href="players/pedri.html">Pedri</a></p>
+                <p><a href="players/gavi.html">Gavi</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Delanteros</h3>
+                <p><a href="players/lewandowski.html">Lewandowski</a></p>
+                <p><a href="players/yamal.html">Yamal</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociales</h3>
+                <p><a href="https://www.fcbarcelona.es/es/">Pagina Oficial</a></p>
+                <p><a href="https://www.instagram.com/fcbarcelona/">Instagram</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Club</h3>
+                <p><a href="stadium.html">Estadio</a></p>
+                <p><a href="history.html">Historia</a></p>
+            </div>
+        </div>
+    </footer>
+
+<script src="../scripts/site.js" defer></script>
+</body>
+</html>

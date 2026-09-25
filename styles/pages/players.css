@@ -1,0 +1,236 @@
+.players-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.58)),
+    url("../../assets/Campnouaerea.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.squad-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.filter-btn {
+  padding: var(--space-2) var(--space-5);
+  border: 2px solid var(--grana);
+  background: var(--surface);
+  color: var(--grana);
+  border-radius: var(--radius-pill);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background-color var(--dur-fast) var(--ease-out),
+    color var(--dur-fast) var(--ease-out),
+    transform var(--dur-base) var(--ease-out),
+    box-shadow var(--dur-base) var(--ease-out);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--grana);
+  color: var(--on-brand);
+}
+
+.filter-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-1);
+}
+
+.filter-btn:active {
+  transform: scale(0.97);
+  transition-duration: var(--dur-press);
+}
+
+.players-grid {
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  margin-bottom: var(--space-8);
+}
+
+.player-image {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.player-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--dur-slow) var(--ease-out);
+}
+
+.player-card:hover .player-image img {
+  transform: scale(1.05);
+}
+
+.player-number {
+  position: absolute;
+  top: var(--space-5);
+  right: var(--space-5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: var(--grana);
+  color: var(--on-brand);
+  border-radius: 50%;
+  font-size: var(--fs-subhead);
+  font-weight: 700;
+}
+
+.player-info {
+  padding: var(--space-5);
+}
+
+.player-info h3 {
+  margin-bottom: var(--space-1);
+  font-size: var(--fs-heading);
+}
+
+.player-position {
+  margin-bottom: var(--space-4);
+  color: var(--azul);
+  font-weight: 600;
+}
+
+.player-stats {
+  display: flex;
+  gap: var(--space-4);
+  margin-bottom: var(--space-4);
+}
+
+.stat-item {
+  flex: 1;
+  text-align: center;
+}
+
+.stat-value {
+  display: block;
+  font-size: var(--fs-heading);
+  font-weight: 800;
+  letter-spacing: var(--tracking-heading);
+  line-height: 1.2;
+  color: var(--grana);
+}
+
+.stat-label {
+  font-size: var(--fs-caption);
+  color: var(--muted);
+}
+
+.more-info-btn {
+  display: block;
+  width: 100%;
+  padding: var(--space-3);
+  border: 0;
+  background: var(--brand-gradient);
+  color: var(--on-brand);
+  border-radius: var(--radius-sm);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: var(--shadow-1);
+  transition:
+    transform var(--dur-base) var(--ease-out),
+    box-shadow var(--dur-base) var(--ease-out);
+}
+
+.more-info-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-2);
+}
+
+.more-info-btn:active {
+  transform: scale(0.97);
+  transition-duration: var(--dur-press);
+}
+
+.player-details {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 var(--space-5);
+  transition:
+    max-height var(--dur-base) var(--ease-in-out),
+    padding var(--dur-base) var(--ease-out);
+}
+
+.player-card.active .player-details {
+  max-height: 500px;
+  padding: 0 var(--space-5) var(--space-5);
+}
+
+.player-details p {
+  margin: var(--space-3) 0;
+  line-height: var(--lh-body);
+}
+
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
+  gap: var(--space-6);
+}
+
+.stat-card {
+  padding: var(--space-5);
+  background: var(--surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-1);
+}
+
+.stat-card h3 {
+  margin-bottom: var(--space-5);
+  color: var(--grana);
+  font-size: var(--fs-heading);
+  text-align: center;
+}
+
+.stat-table {
+  width: 100%;
+}
+
+.stat-row {
+  display: flex;
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.stat-row.header {
+  font-weight: 700;
+  border-bottom: 2px solid var(--grana);
+}
+
+.stat-row span {
+  flex: 1;
+  text-align: center;
+}
+
+.stat-row span:first-child {
+  flex: 2;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .players-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .stats-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .players-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-btn {
+    padding: var(--space-2) var(--space-3);
+    font-size: var(--fs-caption);
+  }
+}

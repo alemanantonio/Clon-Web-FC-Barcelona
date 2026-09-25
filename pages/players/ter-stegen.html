@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web del FC Barcelona</title>
+    <link rel="icon" href="../../assets/fc-barcelona.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../../styles/base.css">
+    <link rel="stylesheet" href="../../styles/profile.css">
+</head>
+<body>
+    <header id="mainHeader">
+        <div class="header-content">
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <nav id="mainNav">
+                <div class="nav-item">
+                    Primer Equipo
+                    <div class="dropdown">
+                        <a href="../players.html">Jugadores</a>
+                        <a href="../tickets.html">Entradas</a>
+                        <a href="../standings.html">Clasificacion</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    Noticias 
+                    <div class="dropdown">
+                        <a href="../latest-news.html">Últimas Noticias</a>
+                        <a href="../upcoming-matches.html">Próximos Partidos</a>
+                        <a href="../results.html">Resultados</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    Historia
+                    <div class="dropdown">
+                        <a href="../history.html">Historia del Club</a>
+                        <a href="../trophies.html">Títulos</a>
+                        <a href="../stadium.html">Estadio</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    Más Equipos
+                    <div class="dropdown">
+                        <a href="../women.html">Femenino</a>
+                        <a href="../basketball.html">Baloncesto</a>
+                        <a href="../barca-atletic.html">Barca Atletic</a>
+                    </div>
+                </div>   
+            </nav>
+            
+            <div class="logo-container">
+                <a href="../../index.html"> 
+                <img class="logo" src="../../assets/fc-barcelona.svg" alt="Logo del FC Barcelona">
+                </a>
+            </div>
+
+            <div class="header-right-container">
+                <div class="header-right">
+                    <a href="../membership.html" class="cta-button cta-button--gold">Hazte Socio</a>
+                    <a href="../tickets.html" class="cta-button cta-button--ghost">Entradas</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="player-profile">
+            <div class="player-header">
+                <div class="player-banner">
+                    <img src="../../assets/player-pages/terstegenaccion.jpg" alt="Ter Stegen en acción" class="banner-img">
+                    <div class="player-overlay">
+                        <h1>Marc-André ter Stegen</h1>
+                        <div class="player-details">
+                            <span class="player-number">1</span>
+                            <span class="player-position">Portero</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="player-basic-info">
+                    <div class="info-item">
+                        <span class="info-label">Nacimiento</span>
+                        <span class="info-value">30 Abril 1992 (32 años)</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Nacionalidad</span>
+                        <span class="info-value">
+                            <img src="../../assets/player-pages/alemania.png" alt="Alemania" class="flag-icon"> Alemania
+                        </span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Altura</span>
+                        <span class="info-value">1.87 m</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Debut Barça</span>
+                        <span class="info-value">25 Sept 2014 vs Málaga</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Procedencia</span>
+                        <span class="info-value">Borussia Mönchengladbach</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Contrato</span>
+                        <span class="info-value">Hasta 2028</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="player-content">
+                <article class="player-bio">
+                    <h2>El Muro Azulgrana</h2>
+                    <div class="bio-content">
+                        <img src="../../assets/players/01-Ter_Stegen-M.webp" alt="Ter Stegen retrato" class="bio-img">
+                        <div class="bio-text">
+                            <p><strong>Marc-André ter Stegen</strong> es considerado uno de los mejores porteros del mundo y pilar fundamental del FC Barcelona desde su llegada en 2014. Nacido en Mönchengladbach, Alemania, se formó en las categorías inferiores del Borussia Mönchengladbach, debutando con el primer equipo en 2011.</p>
+                            <p>Fichado por el Barça por <strong>12 millones de euros</strong>, inicialmente compartió portería con Claudio Bravo en competiciones alternas, pero desde 2016 se consolidó como titular indiscutible.</p>
+                            <p>Destaca por su <strong>juego con los pies</strong> (herencia del estilo Barça), reflejos felinos y liderazgo defensivo. En la temporada 2022/23 ganó el <strong>Trofeo Zamora</strong> con solo 18 goles encajados en 38 partidos.</p>
+                            <p>Renovó hasta 2028 con una cláusula de <strong>500 millones de euros</strong>, demostrando su importancia en el proyecto.</p>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="player-stats">
+                    <h2>Estadísticas 2023/24</h2>
+                    <div class="stats-tabs">
+                        <button class="tab-btn active" data-tab="club">Club</button>
+                        <button class="tab-btn" data-tab="national">Selección</button>
+                    </div>
+                    
+                    <div class="stats-content active" id="club-stats">
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <span class="stat-number">35</span>
+                                <span class="stat-label">Partidos</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">24</span>
+                                <span class="stat-label">Victorias</span>
+                            </div>
+                            <div class="stat-card highlight">
+                                <span class="stat-number">0.71</span>
+                                <span class="stat-label">Goles encajados p/j</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">15</span>
+                                <span class="stat-label">Clean Sheets</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">78%</span>
+                                <span class="stat-label">Paradas</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">92%</span>
+                                <span class="stat-label">Pases acertados</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">1</span>
+                                <span class="stat-label">Asistencias</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">3.1</span>
+                                <span class="stat-label">Salidas p/j</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="stats-content" id="national-stats">
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <span class="stat-number">40</span>
+                                <span class="stat-label">Partidos</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">0.91</span>
+                                <span class="stat-label">Goles encajados p/j</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">18</span>
+                                <span class="stat-label">Clean Sheets</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">75%</span>
+                                <span class="stat-label">Paradas</span>
+                            </div>
+                            <div class="stat-card highlight">
+                                <span class="stat-number">Copa 2017</span>
+                                <span class="stat-label">Mejor torneo</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">2°</span>
+                                <span class="stat-label">Récord Alemania</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="player-trophies">
+                    <h2>Palmarés</h2>
+                    <div class="trophies-container">
+                        <div class="trophy-category">
+                            <h3>🏆 FC Barcelona</h3>
+                            <ul>
+                                <li>1 Champions League (2014/15)</li>
+                                <li>5 Ligas (2014/15, 2015/16, 2017/18, 2018/19, 2022/23)</li>
+                                <li>5 Copas del Rey</li>
+                                <li>3 Supercopas España</li>
+                                <li>1 Mundial de Clubes</li>
+                            </ul>
+                        </div>
+                        <div class="trophy-category">
+                            <h3>🇩🇪 Selección Alemana</h3>
+                            <ul>
+                                <li>1 Copa Confederaciones (2017)</li>
+                                <li>XI Ideal Eurocopa 2016</li>
+                            </ul>
+                        </div>
+                        <div class="trophy-category">
+                            <h3>🏅 Distinciones Individuales</h3>
+                            <ul>
+                                <li>Trofeo Zamora 2022/23</li>
+                                <li>Mejor Portero LaLiga (3 veces)</li>
+                                <li>Equipo Ideal Champions (2019/20)</li>
+                                <li>Máximo invicto Barça (896 minutos)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="player-highlights">
+                    <h2>Paradas Épicas</h2>
+                    <div class="highlight-videos">
+                        <div class="video-card">
+                            <img src="../../assets/player-pages/terstegenbayern.jpg" alt="Ter Stegen vs Bayern" class="video-thumbnail">
+                            <div class="video-info">
+                                <h3>Semifinal Champions 2015</h3>
+                                <p>Atajadas clave contra Lewandowski y Müller</p>
+                                <a href="https://www.youtube.com/watch?v=naiO_vnpT8c">
+                                <button class="btn-watch">▶ Ver paradas</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <img src="../../assets/player-pages/tarstegenpsg.jpg" alt="Ter Stegen vs PSG" class="video-thumbnail">
+                            <div class="video-info">
+                                <h3>Remontada vs PSG (2017)</h3>
+                                <p>Atajada milagrosa a Di María en el 87'</p>
+                                <a href="https://www.youtube.com/watch?v=JGPnd-wiCwU">
+                                <button class="btn-watch">▶ Ver paradas</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <img src="../../assets/player-pages/terstegenmadrid.webp" alt="Ter Stegen vs Real Madrid" class="video-thumbnail">
+                            <div class="video-info">
+                                <h3>Clásico 2022/23</h3>
+                                <p>8 paradas en Camp Nou (Victoria 2-1)</p>
+                                <a href="https://www.youtube.com/watch?v=26p26nQiGLg">
+                                <button class="btn-watch">▶ Ver paradas</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="player-records">
+                    <h2>Récords y Curiosidades</h2>
+                    <div class="records-grid">
+                        <div class="record-card">
+                            <h3>🎯 Portero más preciso</h3>
+                            <p>Récord Guinness por pases acertados (46/46 vs Betis 2017)</p>
+                        </div>
+                        <div class="record-card">
+                            <h3>🧤 Zamora histórico</h3>
+                            <p>Mejor ratio goles/partido (0.47) en 2022/23</p>
+                        </div>
+                        <div class="record-card">
+                            <h3>⏱️ Invicto récord</h3>
+                            <p>896 minutos sin encajar (2022/23)</p>
+                        </div>
+                        <div class="record-card">
+                            <h3>🦸‍♂️ Superter</h3>
+                            <p>3 goles salvados con xG >0.9 en un partido (vs Atleti 2023)</p>
+                        </div>
+                        <div class="record-card">
+                            <h3>👕 Fidelidad</h3>
+                            <p>2° extranjero con más partidos en el Barça (tras Messi)</p>
+                        </div>
+                        <div class="record-card">
+                            <h3>🔄 Estilo Barça</h3>
+                            <p>Portero con más asistencias en LaLiga (7 total)</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    
+        
+        <script>
+            // Funcionalidad de pestañas
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remover clase active de todos los botones y contenidos
+                    document.querySelector('.tab-btn.active').classList.remove('active');
+                    document.querySelector('.stats-content.active').classList.remove('active');
+                    
+                    // Añadir clase active al botón clickeado
+                    btn.classList.add('active');
+                    
+                    // Mostrar el contenido correspondiente
+                    const tabId = btn.getAttribute('data-tab');
+                    document.getElementById(`${tabId}-stats`).classList.add('active');
+                });
+            });
+        </script>
+    </main>
+
+    <footer id="mainFooter">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Porteros</h3>
+                <p><a href="../players/ter-stegen.html">Ter Stegen</a></p>
+                <p><a href="../players/szczesny.html">Szczęsny</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Defensas</h3>
+                <p><a href="../players/araujo.html">Araújo</a></p>
+                <p><a href="../players/kounde.html">Koundé</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Centrocampistas</h3>
+                <p><a href="../players/pedri.html">Pedri</a></p>
+                <p><a href="../players/gavi.html">Gavi</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Delanteros</h3>
+                <p><a href="../players/lewandowski.html">Lewandowski</a></p>
+                <p><a href="../players/yamal.html">Yamal</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociales</h3>
+                <p><a href="https://www.fcbarcelona.es/es/">Pagina Oficial</a></p>
+                <p><a href="https://www.instagram.com/fcbarcelona/">Instagram</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Club</h3>
+                <p><a href="../stadium.html">Estadio</a></p>
+                <p><a href="../history.html">Historia</a></p>
+            </div>
+        </div>
+    </footer>
+
+<script src="../../scripts/site.js" defer></script>
+</body>
+</html>

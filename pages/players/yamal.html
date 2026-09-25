@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web del FC Barcelona</title>
+    <link rel="icon" href="../../assets/fc-barcelona.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../../styles/base.css">
+    <link rel="stylesheet" href="../../styles/profile.css">
+</head>
+<body>
+    <header id="mainHeader">
+        <div class="header-content">
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <nav id="mainNav">
+                <div class="nav-item">
+                    Primer Equipo
+                    <div class="dropdown">
+                        <a href="../players.html">Jugadores</a>
+                        <a href="../tickets.html">Entradas</a>
+                        <a href="../standings.html">Clasificacion</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    Noticias 
+                    <div class="dropdown">
+                        <a href="../latest-news.html">Últimas Noticias</a>
+                        <a href="../upcoming-matches.html">Próximos Partidos</a>
+                        <a href="../results.html">Resultados</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    Historia
+                    <div class="dropdown">
+                        <a href="../history.html">Historia del Club</a>
+                        <a href="../trophies.html">Títulos</a>
+                        <a href="../stadium.html">Estadio</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    Más Equipos
+                    <div class="dropdown">
+                        <a href="../women.html">Femenino</a>
+                        <a href="../basketball.html">Baloncesto</a>
+                        <a href="../barca-atletic.html">Barca Atletic</a>
+                    </div>
+                </div>   
+            </nav>
+            
+            <div class="logo-container">
+                <a href="../../index.html">   
+                <img class="logo" src="../../assets/fc-barcelona.svg" alt="Logo del FC Barcelona">
+                </a>
+            </div>
+
+            <div class="header-right-container">
+                <div class="header-right">
+                    <a href="../membership.html" class="cta-button cta-button--gold">Hazte Socio</a>
+                    <a href="../tickets.html" class="cta-button cta-button--ghost">Entradas</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="player-profile">
+            <div class="player-header">
+                <div class="player-banner">
+                    <img src="../../assets/player-pages/yamalaccion.webp" alt="Lamine Yamal en acción" class="banner-img">
+                    <div class="player-overlay">
+                        <h1>Lamine Yamal</h1>
+                        <div class="player-details">
+                            <span class="player-number">27</span>
+                            <span class="player-position">Extremo Derecho</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="player-basic-info">
+                    <div class="info-item">
+                        <span class="info-label">Nombre completo</span>
+                        <span class="info-value">Lamine Yamal Nasraoui Ebana</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Nacimiento</span>
+                        <span class="info-value">13 Julio 2007 (16 años)</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Nacionalidad</span>
+                        <span class="info-value">
+                            <img src="../../assets/player-pages/espana.png" alt="España" class="flag-icon"> España / 
+                            <img src="../../assets/player-pages/marruecos.png" alt="Marruecos" class="flag-icon"> Marruecos
+                        </span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Altura</span>
+                        <span class="info-value">1.80 m</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Debut</span>
+                        <span class="info-value">29 Abril 2023 vs Betis (15 años)</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Procedencia</span>
+                        <span class="info-value">Cantera FC Barcelona</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="player-content">
+                <article class="player-bio">
+                    <h2>La Perla de La Masia</h2>
+                    <div class="bio-content">
+                        <img src="../../assets/19-Lamine-M.webp" alt="Lamine Yamal retrato" class="bio-img">
+                        <div class="bio-text">
+                            <p><strong>Lamine Yamal</strong> es la última joya surgida de la cantera azulgrana, considerado uno de los mayores talentos de su generación a nivel mundial. Nacido en Mataró (Barcelona) de padre marroquí y madre ecuatorial, se unió a La Masia a los 7 años.</p>
+                            <p>Con apenas <strong>15 años y 290 días</strong>, debutó con el primer equipo en abril de 2023 bajo el mando de Xavi Hernández, convirtiéndose en el jugador más joven en debutar con el Barça en el siglo XXI.</p>
+                            <p>En septiembre de 2023, con 16 años y 57 días, se convirtió en el <strong>goleador más joven de la historia de LaLiga</strong> ante el Granada, superando el récord que ostentaba Ansu Fati.</p>
+                            <p>En octubre de 2023 renovó su contrato hasta 2026 con una cláusula de 1.000 millones de euros.</p>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="player-stats">
+                    <h2>Estadísticas 2023/24</h2>
+                    <div class="stats-tabs">
+                        <button class="tab-btn active" data-tab="club">Club</button>
+                        <button class="tab-btn" data-tab="national">Selección</button>
+                    </div>
+                    
+                    <div class="stats-content active" id="club-stats">
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <span class="stat-number">38</span>
+                                <span class="stat-label">Partidos</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">6</span>
+                                <span class="stat-label">Goles</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">7</span>
+                                <span class="stat-label">Asistencias</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">1.8</span>
+                                <span class="stat-label">Regates p/j</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">84%</span>
+                                <span class="stat-label">Pases acertados</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">2.3</span>
+                                <span class="stat-label">Centros p/j</span>
+                            </div>
+                            <div class="stat-card highlight">
+                                <span class="stat-number">5</span>
+                                <span class="stat-label">MVP del partido</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">1.450'</span>
+                                <span class="stat-label">Minutos</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="stats-content" id="national-stats">
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <span class="stat-number">4</span>
+                                <span class="stat-label">Partidos</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">2</span>
+                                <span class="stat-label">Goles</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">1</span>
+                                <span class="stat-label">Asistencias</span>
+                            </div>
+                            <div class="stat-card highlight">
+                                <span class="stat-number">16</span>
+                                <span class="stat-label">Debut años</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">83%</span>
+                                <span class="stat-label">Pases acertados</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">2.1</span>
+                                <span class="stat-label">Regates p/j</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">1</span>
+                                <span class="stat-label">MVP</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">280'</span>
+                                <span class="stat-label">Minutos</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="player-records">
+                    <h2>Récords Históricos</h2>
+                    <div class="records-container">
+                        <div class="record-card">
+                            <div class="record-icon">🥇</div>
+                            <h3>Debut más joven con el Barça (s.XXI)</h3>
+                            <p>15 años y 290 días vs Betis (2022/23)</p>
+                        </div>
+                        <div class="record-card">
+                            <div class="record-icon">👑</div>
+                            <h3>Goleador más joven de LaLiga</h3>
+                            <p>16 años y 57 días vs Granada (2023/24)</p>
+                        </div>
+                        <div class="record-card">
+                            <div class="record-icon">🇪🇸</div>
+                            <h3>Internacional más joven con España</h3>
+                            <p>16 años y 57 días vs Georgia (2023)</p>
+                        </div>
+                        <div class="record-card">
+                            <div class="record-icon">⚽</div>
+                            <h3>Goleador más joven de España</h3>
+                            <p>16 años y 57 días vs Georgia (2023)</p>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="player-highlights">
+                    <h2>Momentos Épicos</h2>
+                    <div class="highlight-videos">
+                        <div class="video-card">
+                            <img src="../../assets/player-pages/debutyamal.jpg" alt="Yamal debut" class="video-thumbnail">
+                            <div class="video-info">
+                                <h3>Debut histórico con el Barça</h3>
+                                <p>Con 15 años ante Betis en Montjuïc</p>
+                                <a href="https://www.youtube.com/watch?v=2rNKA0HEgB0">
+                                <button class="btn-watch">▶ Ver video</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <img src="../../assets/player-pages/yamalrecord.jpg" alt="Yamal récord gol" class="video-thumbnail">
+                            <div class="video-info">
+                                <h3>Récord en LaLiga</h3>
+                                <p>Gol más joven de la historia vs Granada</p>
+                                <a href="https://www.youtube.com/watch?v=okI1kQrR-Lg">
+                                <button class="btn-watch">▶ Ver video</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <img src="../../assets/player-pages/yamalseleccion.jpg" alt="Yamal con España" class="video-thumbnail">
+                            <div class="video-info">
+                                <h3>Debut con la Selección</h3>
+                                <p>Gol en su primer partido con España</p>
+                                <a href="https://www.youtube.com/watch?v=aiKTkTl5qZg">
+                                <button class="btn-watch">▶ Ver video</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="player-potential">
+                    <h2>Proyección Futura</h2>
+                    <div class="potential-content">
+                        <div class="potential-text">
+                            <p>Lamine Yamal ha sido comparado con <strong>Lionel Messi</strong> por su estilo de juego: zurdo, gran dribling, visión de juego y capacidad goleadora. Expertos destacan:</p>
+                            <ul>
+                                <li><strong>Potencial:</strong> Considerado top-3 talentos sub-17 del mundo</li>
+                                <li><strong>Valor de mercado:</strong> €75M (Transfermarkt, 2024)</li>
+                                <li><strong>Selecciones:</strong> España lo considera joya de la futura "Generación 2026"</li>
+                                <li><strong>Rol en el Barça:</strong> Futura estrella del proyecto post-Lewandowski</li>
+                            </ul>
+                            <p>Xavi Hernández ha declarado: "Lamine tiene un don natural. Con trabajo y cabeza, puede ser uno de los mejores del mundo".</p>
+                        </div>
+                        <div class="potential-image">
+                            <div class="potential-quote">
+                                <blockquote>"Quiero ganar Champions con el Barça y Balones de Oro"</blockquote>
+                                <cite>- Lamine Yamal, 2024</cite>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    
+        
+        <script>
+            // Funcionalidad de pestañas
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remover clase active de todos los botones y contenidos
+                    document.querySelector('.tab-btn.active').classList.remove('active');
+                    document.querySelector('.stats-content.active').classList.remove('active');
+                    
+                    // Añadir clase active al botón clickeado
+                    btn.classList.add('active');
+                    
+                    // Mostrar el contenido correspondiente
+                    const tabId = btn.getAttribute('data-tab');
+                    document.getElementById(`${tabId}-stats`).classList.add('active');
+                });
+            });
+        </script>
+    </main>
+
+    <footer id="mainFooter">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Porteros</h3>
+                <p><a href="../players/ter-stegen.html">Ter Stegen</a></p>
+                <p><a href="../players/szczesny.html">Szczęsny</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Defensas</h3>
+                <p><a href="../players/araujo.html">Araújo</a></p>
+                <p><a href="../players/kounde.html">Koundé</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Centrocampistas</h3>
+                <p><a href="../players/pedri.html">Pedri</a></p>
+                <p><a href="../players/gavi.html">Gavi</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Delanteros</h3>
+                <p><a href="../players/lewandowski.html">Lewandowski</a></p>
+                <p><a href="../players/yamal.html">Yamal</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociales</h3>
+                <p><a href="https://www.fcbarcelona.es/es/">Pagina Oficial</a></p>
+                <p><a href="https://www.instagram.com/fcbarcelona/">Instagram</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Club</h3>
+                <p><a href="../stadium.html">Estadio</a></p>
+                <p><a href="../history.html">Historia</a></p>
+            </div>
+        </div>
+    </footer>
+
+<script src="../../scripts/site.js" defer></script>
+</body>
+</html>

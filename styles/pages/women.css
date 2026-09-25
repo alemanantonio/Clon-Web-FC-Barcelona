@@ -1,0 +1,65 @@
+.femeni-history {
+    padding: var(--space-5);
+}
+
+.femeni-history h1 {
+    margin-bottom: var(--space-7);
+}
+
+.history-section h2 {
+    color: var(--azul);
+    font-size: var(--fs-heading);
+}
+
+.trophies-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+    margin-bottom: var(--space-5);
+}
+
+.trophy-item {
+    background: linear-gradient(135deg, rgba(0, 77, 152, 0.1) 0%, rgba(168, 19, 62, 0.1) 100%);
+    padding: var(--space-4);
+    border-left: 4px solid var(--grana);
+}
+
+.trophy-item h3 {
+    color: var(--azul);
+    margin-bottom: var(--space-1);
+}
+
+.players-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-5);
+    width: 100%;
+}
+
+.player-card img {
+    height: 180px;
+}
+
+.player-card h3 {
+    margin: var(--space-2) 0 var(--space-1);
+}
+
+.player-card p {
+    color: var(--azul);
+    padding-bottom: var(--space-4);
+}
+
+@media (max-width: 768px) {
+    .femeni-history {
+        padding: var(--space-4);
+    }
+
+    .trophies-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .players-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}

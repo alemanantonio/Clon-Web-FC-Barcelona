@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web del FC Barcelona</title>
+    <link rel="icon" href="../../assets/fc-barcelona.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../../styles/base.css">
+    <link rel="stylesheet" href="../../styles/profile.css">
+</head>
+<body>
+    <header id="mainHeader">
+        <div class="header-content">
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <nav id="mainNav">
+                <div class="nav-item">
+                    Primer Equipo
+                    <div class="dropdown">
+                        <a href="../players.html">Jugadores</a>
+                        <a href="../tickets.html">Entradas</a>
+                        <a href="../standings.html">Clasificacion</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    Noticias 
+                    <div class="dropdown">
+                        <a href="../latest-news.html">Últimas Noticias</a>
+                        <a href="../upcoming-matches.html">Próximos Partidos</a>
+                        <a href="../results.html">Resultados</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    Historia
+                    <div class="dropdown">
+                        <a href="../history.html">Historia del Club</a>
+                        <a href="../trophies.html">Títulos</a>
+                        <a href="../stadium.html">Estadio</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    Más Equipos
+                    <div class="dropdown">
+                        <a href="../women.html">Femenino</a>
+                        <a href="../basketball.html">Baloncesto</a>
+                        <a href="../barca-atletic.html">Barca Atletic</a>
+                    </div>
+                </div>   
+            </nav>
+            
+            <div class="logo-container">
+                <a href="../../index.html">   
+                <img class="logo" src="../../assets/fc-barcelona.svg" alt="Logo del FC Barcelona">
+                </a>
+            </div>
+
+            <div class="header-right-container">
+                <div class="header-right">
+                    <a href="../membership.html" class="cta-button cta-button--gold">Hazte Socio</a>
+                    <a href="../tickets.html" class="cta-button cta-button--ghost">Entradas</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="player-profile">
+            <div class="player-header">
+                <div class="player-banner">
+                    <img src="../../assets/players/04-Araujo-M.webp" alt="Ronald Araujo en acción" class="banner-img">
+                    <div class="player-overlay">
+                        <h1>Ronald Araujo</h1>
+                        <div class="player-details">
+                            <span class="player-number">4</span>
+                            <span class="player-position">Defensa Central</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="player-basic-info">
+                    <div class="info-item">
+                        <span class="info-label">Nacimiento</span>
+                        <span class="info-value">7 Mar 1999 (25 años)</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Nacionalidad</span>
+                        <span class="info-value">
+                            <img src="../../assets/player-pages/uruguay.png" alt="Uruguay" class="flag-icon"> Uruguay
+                        </span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Altura</span>
+                        <span class="info-value">1.91 m</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Peso</span>
+                        <span class="info-value">85 kg</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Debut</span>
+                        <span class="info-value">6 Oct 2019 vs Sevilla</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="player-content">
+                <article class="player-bio">
+                    <h2>Biografía</h2>
+                    <div class="bio-content">
+                        <img src="../../assets/players/04-Araujo-M.webp" alt="Ronald Araujo retrato" class="bio-img">
+                        <div class="bio-text">
+                            <p><strong>Ronald Federico Araújo da Silva</strong> nació en Rivera, Uruguay. Se formó en las categorías inferiores del Huracán de Rivera antes de dar el salto a Montevideo con el Rentistas.</p>
+                            <p>Su gran potencial llamó la atención del Boston River, donde debutó profesionalmente en 2016. Tras solo 6 meses, el FC Barcelona lo fichó en agosto de 2018 por 4.7 millones de euros para el Barça B.</p>
+                            <p>Debutó con el primer equipo el 6 de octubre de 2019 bajo la dirección de Ernesto Valverde. Desde la temporada 2021-22 se ha consolidado como uno de los pilares defensivos del equipo.</p>
+                            <p>En octubre de 2022 renovó su contrato hasta 2026 con una cláusula de 1.000 millones de euros.</p>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="player-stats">
+                    <h2>Estadísticas 2023/24</h2>
+                    <div class="stats-tabs">
+                        <button class="tab-btn active" data-tab="club">Club</button>
+                        <button class="tab-btn" data-tab="national">Selección</button>
+                    </div>
+                    
+                    <div class="stats-content active" id="club-stats">
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <span class="stat-number">32</span>
+                                <span class="stat-label">Partidos jugados</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">2.890'</span>
+                                <span class="stat-label">Minutos jugados</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">3</span>
+                                <span class="stat-label">Goles</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">1</span>
+                                <span class="stat-label">Asistencias</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">87%</span>
+                                <span class="stat-label">Precisión pase</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">4.1</span>
+                                <span class="stat-label">Entradas por partido</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">3.8</span>
+                                <span class="stat-label">Despejes por partido</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">7</span>
+                                <span class="stat-label">Tarjetas amarillas</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="stats-content" id="national-stats">
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <span class="stat-number">8</span>
+                                <span class="stat-label">Partidos jugados</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">720'</span>
+                                <span class="stat-label">Minutos jugados</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">1</span>
+                                <span class="stat-label">Goles</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">0</span>
+                                <span class="stat-label">Asistencias</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">85%</span>
+                                <span class="stat-label">Precisión pase</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">3.5</span>
+                                <span class="stat-label">Entradas por partido</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">4.2</span>
+                                <span class="stat-label">Despejes por partido</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">2</span>
+                                <span class="stat-label">Tarjetas amarillas</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="player-highlights">
+                    <h2>Momentos Destacados</h2>
+                    <div class="highlight-videos">
+                        <div class="video-card">
+                            <img src="../../assets/player-pages/AraujoVini.jpg" alt="Araujo vs Vinícius" class="video-thumbnail">
+                            <div class="video-info">
+                                <h3>Gran actuación contra el Real Madrid</h3>
+                                <p>Marcaje ejemplar a Vinícius Jr. en el Clásico de octubre 2023</p>
+                                <a href="https://www.youtube.com/watch?v=8T5oT8ubSSE">
+                                <button class="btn-watch">▶ Ver video</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <img src="../../assets/player-pages/AraujoValencia.webp" alt="Araujo gol vs Valencia" class="video-thumbnail">
+                            <div class="video-info">
+                                <h3>Gol de cabeza vs Valencia</h3>
+                                <p>Gol decisivo en la victoria 2-1 en Mestalla (2023/24)</p>
+                                <a href="https://www.youtube.com/watch?v=1rF4CPrHYOU">
+                                <button class="btn-watch" >▶ Ver video</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="player-facts">
+                    <h2>Datos Curiosos</h2>
+                    <div class="facts-grid">
+                        <div class="fact-card">
+                            <h3>🏆 Títulos con el Barça</h3>
+                            <ul>
+                                <li>1 Liga (2022/23)</li>
+                                <li>1 Copa del Rey (2020/21)</li>
+                                <li>2 Supercopas España (2022/23, 2023/24)</li>
+                            </ul>
+                        </div>
+                        <div class="fact-card">
+                            <h3>🌎 Carrera Internacional</h3>
+                            <ul>
+                                <li>Debut con Uruguay en 2020</li>
+                                <li>14 partidos con la Celeste</li>
+                                <li>Copa América 2021 y Mundial 2022</li>
+                            </ul>
+                        </div>
+                        <div class="fact-card">
+                            <h3>⚽ Estilo de Juego</h3>
+                            <ul>
+                                <li>Fuerza física y velocidad</li>
+                                <li>Excelente juego aéreo</li>
+                                <li>Versatilidad para jugar como lateral derecho</li>
+                            </ul>
+                        </div>
+                        <div class="fact-card">
+                            <h3>📈 Evolución</h3>
+                            <ul>
+                                <li>Valor de mercado: €70M (2024)</li>
+                                <li>Mejor defensor LaLiga 2022/23</li>
+                                <li>XI Ideal de la Champions 2022/23</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    
+        
+        <script>
+            // Funcionalidad de pestañas
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remover clase active de todos los botones y contenidos
+                    document.querySelector('.tab-btn.active').classList.remove('active');
+                    document.querySelector('.stats-content.active').classList.remove('active');
+                    
+                    // Añadir clase active al botón clickeado
+                    btn.classList.add('active');
+                    
+                    // Mostrar el contenido correspondiente
+                    const tabId = btn.getAttribute('data-tab');
+                    document.getElementById(`${tabId}-stats`).classList.add('active');
+                });
+            });
+        </script>
+    </main>
+
+    <footer id="mainFooter">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Porteros</h3>
+                <p><a href="../players/ter-stegen.html">Ter Stegen</a></p>
+                <p><a href="../players/szczesny.html">Szczęsny</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Defensas</h3>
+                <p><a href="../players/araujo.html">Araújo</a></p>
+                <p><a href="../players/kounde.html">Koundé</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Centrocampistas</h3>
+                <p><a href="../players/pedri.html">Pedri</a></p>
+                <p><a href="../players/gavi.html">Gavi</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Delanteros</h3>
+                <p><a href="../players/lewandowski.html">Lewandowski</a></p>
+                <p><a href="../players/yamal.html">Yamal</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociales</h3>
+                <p><a href="https://www.fcbarcelona.es/es/">Pagina Oficial</a></p>
+                <p><a href="https://www.instagram.com/fcbarcelona/">Instagram</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Club</h3>
+                <p><a href="../stadium.html">Estadio</a></p>
+                <p><a href="../history.html">Historia</a></p>
+            </div>
+        </div>
+    </footer>
+
+<script src="../../scripts/site.js" defer></script>
+</body>
+</html>

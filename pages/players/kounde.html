@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web del FC Barcelona</title>
+    <link rel="icon" href="../../assets/fc-barcelona.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../../styles/base.css">
+    <link rel="stylesheet" href="../../styles/profile.css">
+</head>
+<body>
+    <header id="mainHeader">
+        <div class="header-content">
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <nav id="mainNav">
+                <div class="nav-item">
+                    Primer Equipo
+                    <div class="dropdown">
+                        <a href="../players.html">Jugadores</a>
+                        <a href="../tickets.html">Entradas</a>
+                        <a href="../standings.html">Clasificacion</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    Noticias 
+                    <div class="dropdown">
+                        <a href="../latest-news.html">Últimas Noticias</a>
+                        <a href="../upcoming-matches.html">Próximos Partidos</a>
+                        <a href="../results.html">Resultados</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    Historia
+                    <div class="dropdown">
+                        <a href="../history.html">Historia del Club</a>
+                        <a href="../trophies.html">Títulos</a>
+                        <a href="../stadium.html">Estadio</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    Más Equipos
+                    <div class="dropdown">
+                        <a href="../women.html">Femenino</a>
+                        <a href="../basketball.html">Baloncesto</a>
+                        <a href="../barca-atletic.html">Barca Atletic</a>
+                    </div>
+                </div>   
+            </nav>
+            
+            <div class="logo-container">
+                <a href="../../index.html">  
+                <img class="logo" src="../../assets/fc-barcelona.svg" alt="Logo del FC Barcelona">
+                </a>
+            </div>
+
+            <div class="header-right-container">
+                <div class="header-right">
+                    <a href="../membership.html" class="cta-button cta-button--gold">Hazte Socio</a>
+                    <a href="../tickets.html" class="cta-button cta-button--ghost">Entradas</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="player-profile">
+            <div class="player-header">
+                <div class="player-banner">
+                    <img src="../../assets/player-pages/koundeaccion.jpg" alt="Koundé en acción" class="banner-img">
+                    <div class="player-overlay">
+                        <h1>Jules Koundé</h1>
+                        <div class="player-details">
+                            <span class="player-number">23</span>
+                            <span class="player-position">Defensa</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="player-basic-info">
+                    <div class="info-item">
+                        <span class="info-label">Nombre completo</span>
+                        <span class="info-value">Jules Olivier Koundé</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Nacimiento</span>
+                        <span class="info-value">12 Noviembre 1998 (25 años)</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Nacionalidad</span>
+                        <span class="info-value">
+                            <img src="../../assets/player-pages/francia.png" alt="Francia" class="flag-icon"> Francia
+                        </span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Altura</span>
+                        <span class="info-value">1.78 m</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Debut Barça</span>
+                        <span class="info-value">13 Agosto 2022 vs Rayo Vallecano</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Procedencia</span>
+                        <span class="info-value">Sevilla FC</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Cláusula</span>
+                        <span class="info-value">€1,000 millones</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="player-content">
+                <article class="player-bio">
+                    <h2>El Muro Versátil</h2>
+                    <div class="bio-content">
+                        <img src="../../assets/players/23-Kounde-M.webp" alt="Koundé retrato" class="bio-img">
+                        <div class="bio-text">
+                            <p><strong>Jules Koundé</strong> es la personificación del defensor moderno. Nacido en París, se formó en el Girondins de Burdeos donde debutó en 2018 con apenas 19 años, mostrando una madurez impropia de su edad.</p>
+                            <p>En 2019 fichó por el <strong>Sevilla FC</strong> por €25 millones, donde en tres temporadas se consolidó como uno de los mejores defensas de Europa, ganando la Europa League en 2020. Su actuación en la final ante el Inter fue magistral.</p>
+                            <p>En julio de 2022 llegó al Barça en una de las operaciones más esperadas, convirtiéndose en pilar defensivo del proyecto de Xavi. Su versatilidad le permite jugar como central o lateral derecho con igual solvencia.</p>
+                            <p>Xavi lo define como: <em>"Un jugador con inteligencia táctica excepcional. Tiene la velocidad de un lateral y la seguridad de un central. Es el defensor completo que todo entrenador quiere"</em>.</p>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="player-stats">
+                    <h2>Estadísticas 2023/24</h2>
+                    <div class="stats-tabs">
+                        <button class="tab-btn active" data-tab="club">Club</button>
+                        <button class="tab-btn" data-tab="national">Selección</button>
+                    </div>
+                    
+                    <div class="stats-content active" id="club-stats">
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <span class="stat-number">42</span>
+                                <span class="stat-label">Partidos</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">2</span>
+                                <span class="stat-label">Goles</span>
+                            </div>
+                            <div class="stat-card highlight">
+                                <span class="stat-number">5</span>
+                                <span class="stat-label">Asistencias</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">91%</span>
+                                <span class="stat-label">Pases acertados</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">1.2</span>
+                                <span class="stat-label">Regates p/j</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">2.3</span>
+                                <span class="stat-label">Entradas p/j</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">4.7</span>
+                                <span class="stat-label">Balones recuperados p/j</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">3.540'</span>
+                                <span class="stat-label">Minutos</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="stats-content" id="national-stats">
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <span class="stat-number">24</span>
+                                <span class="stat-label">Partidos</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">0</span>
+                                <span class="stat-label">Goles</span>
+                            </div>
+                            <div class="stat-card highlight">
+                                <span class="stat-number">2</span>
+                                <span class="stat-label">Asistencias</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">Mundial 2022</span>
+                                <span class="stat-label">Subcampeón</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">89%</span>
+                                <span class="stat-label">Pases acertados</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="player-trophies">
+                    <h2>Palmarés</h2>
+                    <div class="trophies-container">
+                        <div class="trophy-category">
+                            <h3>🏆 FC Barcelona</h3>
+                            <ul>
+                                <li>1 Liga (2022/23)</li>
+                                <li>1 Supercopa España (2022/23)</li>
+                            </ul>
+                        </div>
+                        <div class="trophy-category">
+                            <h3>🏆 Sevilla FC</h3>
+                            <ul>
+                                <li>1 Europa League (2019/20)</li>
+                            </ul>
+                        </div>
+                        <div class="trophy-category">
+                            <h3>🇫🇷 Selección Francesa</h3>
+                            <ul>
+                                <li>1 UEFA Nations League (2021)</li>
+                                <li>Subcampeón Mundial 2022</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="player-highlights">
+                    <h2>Jugadas Épicas</h2>
+                    <div class="highlight-videos">
+                        <div class="video-card">
+                            <img src="../../assets/player-pages/koundeclasico.jpg" alt="Koundé vs Real Madrid" class="video-thumbnail">
+                            <div class="video-info">
+                                <h3>Clásico 2023/24</h3>
+                                <p>Exhibición defensiva ante Vinícius Jr.</p>
+                                <a href="https://www.youtube.com/watch?v=2vIDnPll3g8">
+                                <button class="btn-watch">▶ Ver jugada</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <img src="../../assets/player-pages/koundeeuropaleague.jpg" alt="Koundé con Sevilla" class="video-thumbnail">
+                            <div class="video-info">
+                                <h3>Europa League 2020</h3>
+                                <p>Partido perfecto en la final vs Inter</p>
+                                <a href="https://www.youtube.com/watch?v=C8cXniL-YBI">
+                                <button class="btn-watch">▶ Ver highlights</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="video-card">
+                            <img src="../../assets/player-pages/koundechampions.jpg" alt="Koundé vs Napoli" class="video-thumbnail">
+                            <div class="video-info">
+                                <h3>Champions 2024</h3>
+                                <p>Gol de cabeza en octavos de final</p>
+                                <a href="https://www.youtube.com/watch?v=ooLYT-110Tc">
+                                <button class="btn-watch">▶ Ver gol</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="player-style">
+                    <h2>Estilo de Juego</h2>
+                    <div class="style-content">
+                        <div class="style-text">
+                            <p>Koundé es un <strong>defensa moderno</strong> que destaca por:</p>
+                            <ul>
+                                <li><strong>Versatilidad:</strong> Juega con igual solvencia como central o lateral derecho</li>
+                                <li><strong>Velocidad:</strong> Recuperación espectacular en espacios abiertos</li>
+                                <li><strong>Salida de balón:</strong> Pases precisos y conducción segura</li>
+                                <li><strong>Posicionamiento:</strong> Lectura de juego excepcional</li>
+                                <li><strong>Carácter:</strong> Liderazgo y concentración en momentos clave</li>
+                            </ul>
+                            <p>Comparado con Thuram por su físico y con Piqué por su capacidad para iniciar el juego, pero con un estilo único marcado por su <strong>agilidad y técnica</strong> poco comunes en defensores.</p>
+                        </div>
+                        <div class="style-image">
+                            <div class="style-quote">
+                                <blockquote>"Prefiero ganar 1-0 con defensa perfecta que 5-4. La solidez defensiva es arte"</blockquote>
+                                <cite>- Koundé, 2023</cite>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="player-future">
+                    <h2>Proyección Futura</h2>
+                    <div class="future-content">
+                        <div class="future-card">
+                            <h3>🏆 Objetivos</h3>
+                            <ul>
+                                <li>Ganar la Champions League con el Barça</li>
+                                <li>Ser considerado el mejor defensor del mundo</li>
+                                <li>Liderar la defensa francesa en el Mundial 2026</li>
+                            </ul>
+                        </div>
+                        <div class="future-card">
+                            <h3>📈 Potencial</h3>
+                            <ul>
+                                <li>Valor de mercado: €80M (2024)</li>
+                                <li>Futuro capitán del FC Barcelona</li>
+                                <li>Comparado con los grandes defensas franceses</li>
+                            </ul>
+                        </div>
+                        <div class="future-card">
+                            <h3>💎 Joya Defensiva</h3>
+                            <ul>
+                                <li>Máximo exponente de la nueva generación defensiva</li>
+                                <li>Referente para jóvenes defensores</li>
+                                <li>Proyecto solidario en África</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    
+        
+        <script>
+            // Funcionalidad de pestañas
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remover clase active de todos los botones y contenidos
+                    document.querySelector('.tab-btn.active').classList.remove('active');
+                    document.querySelector('.stats-content.active').classList.remove('active');
+                    
+                    // Añadir clase active al botón clickeado
+                    btn.classList.add('active');
+                    
+                    // Mostrar el contenido correspondiente
+                    const tabId = btn.getAttribute('data-tab');
+                    document.getElementById(`${tabId}-stats`).classList.add('active');
+                });
+            });
+        </script>
+    </main>
+
+    <footer id="mainFooter">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Porteros</h3>
+                <p><a href="../players/ter-stegen.html">Ter Stegen</a></p>
+                <p><a href="../players/szczesny.html">Szczęsny</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Defensas</h3>
+                <p><a href="../players/araujo.html">Araújo</a></p>
+                <p><a href="../players/kounde.html">Koundé</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Centrocampistas</h3>
+                <p><a href="../players/pedri.html">Pedri</a></p>
+                <p><a href="../players/gavi.html">Gavi</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Delanteros</h3>
+                <p><a href="../players/lewandowski.html">Lewandowski</a></p>
+                <p><a href="../players/yamal.html">Yamal</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociales</h3>
+                <p><a href="https://www.fcbarcelona.es/es/">Pagina Oficial</a></p>
+                <p><a href="https://www.instagram.com/fcbarcelona/">Instagram</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Club</h3>
+                <p><a href="../stadium.html">Estadio</a></p>
+                <p><a href="../history.html">Historia</a></p>
+            </div>
+        </div>
+    </footer>
+
+<script src="../../scripts/site.js" defer></script>
+</body>
+</html>

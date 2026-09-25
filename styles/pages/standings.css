@@ -1,0 +1,217 @@
+.standings-section h1 {
+    margin-bottom: var(--space-4);
+}
+
+.last-update {
+    text-align: right;
+}
+
+.competition-tabs {
+    display: flex;
+    margin-bottom: var(--space-5);
+    border-bottom: 2px solid var(--line);
+}
+
+.standings-table {
+    width: 100%;
+    margin: var(--space-5) 0;
+    border-collapse: collapse;
+}
+
+.table-header,
+.table-row {
+    display: flex;
+    padding: var(--space-3);
+    border-bottom: 1px solid var(--line);
+    align-items: center;
+    transition: background-color var(--dur-fast) var(--ease-out);
+}
+
+.table-header {
+    font-weight: bold;
+    background: var(--surface-2);
+}
+
+.table-row:hover {
+    background: var(--surface-2);
+}
+
+.table-row.barca {
+    background-color: rgba(168, 19, 62, 0.05);
+    font-weight: bold;
+}
+
+.table-row.barca:hover {
+    background-color: rgba(168, 19, 62, 0.1);
+}
+
+.pos {
+    width: 40px;
+    text-align: center;
+}
+
+.team {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.team img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+.stats {
+    flex: 1;
+    text-align: center;
+}
+
+.pts {
+    font-weight: bold;
+    color: var(--grana);
+}
+
+.next-match {
+    background: var(--surface);
+    padding: var(--space-5);
+    border-radius: var(--radius-sm);
+    margin-top: var(--space-6);
+    box-shadow: var(--shadow-1);
+}
+
+.match-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-5);
+    margin: var(--space-4) 0;
+}
+
+.match-info .team {
+    flex-direction: column;
+    text-align: center;
+    flex: 1;
+}
+
+.match-info img {
+    width: 50px;
+    height: 50px;
+}
+
+.vs {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--azul);
+}
+
+.match-details {
+    text-align: center;
+    color: var(--muted);
+}
+
+.match-details p {
+    margin: var(--space-1) 0;
+}
+
+.copa-bracket {
+    background: var(--surface);
+    padding: var(--space-5);
+    border-radius: var(--radius-sm);
+    margin: var(--space-5) 0;
+    box-shadow: var(--shadow-1);
+}
+
+.final-match {
+    text-align: center;
+}
+
+.match-teams {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-6);
+    margin: var(--space-5) 0;
+}
+
+.match-teams .team {
+    flex-direction: column;
+}
+
+.match-teams img {
+    width: 60px;
+    height: 60px;
+}
+
+.score {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.winner {
+    font-weight: bold;
+    color: var(--grana);
+}
+
+.top-scorers {
+    background: var(--surface);
+    padding: var(--space-5);
+    border-radius: var(--radius-sm);
+    margin-top: var(--space-6);
+    box-shadow: var(--shadow-1);
+}
+
+.scorers-table {
+    margin-top: var(--space-4);
+}
+
+.scorer-row {
+    display: flex;
+    align-items: center;
+    padding: var(--space-3);
+    border-bottom: 1px solid var(--line);
+    transition: background-color var(--dur-fast) var(--ease-out);
+}
+
+.scorer-row:hover {
+    background: var(--surface-2);
+}
+
+.scorer-row .player {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+}
+
+.scorer-row img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .competition-tabs {
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .standings-table {
+        overflow-x: auto;
+    }
+
+    .table-header,
+    .table-row {
+        min-width: 560px;
+        font-size: var(--fs-caption);
+    }
+
+    .team {
+        flex: 2;
+    }
+
+    .stats {
+        flex: 0.7;
+    }
+}
